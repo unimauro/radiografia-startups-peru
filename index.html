@@ -123,36 +123,31 @@
   a.btn{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--azul);text-decoration:none;
     border:1px solid var(--line);background:var(--surface2);padding:7px 13px;border-radius:9px;transition:.15s}
   a.btn:hover,.sim .go:hover{filter:brightness(1.05)}
-  /* Intro relato + fuego */
-  .intro{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:5vw;
-    background:radial-gradient(120% 120% at 50% 0%,#2a0d0a,#12060a 60%,#0a0510);transition:opacity .9s ease;overflow:hidden}
-  .intro.done{opacity:0;pointer-events:none}
-  .intro-card{position:relative;max-width:620px;width:100%;padding:38px 34px 26px;border-radius:22px;text-align:left;color:#fff;
+  /* Relato inline + fuego */
+  .relato-wrap{margin:24px 0 10px;position:relative}
+  .relato-card{position:relative;overflow:hidden;border-radius:20px;padding:32px 30px;color:#fff;
     background:linear-gradient(140deg,#d81e5b 0%,#e8541e 52%,#f7a621 100%);
-    box-shadow:0 30px 90px rgba(232,84,30,.45),0 0 0 1px rgba(255,255,255,.12) inset;
-    -webkit-mask-image:linear-gradient(to top,#000 58%,transparent 92%);mask-image:linear-gradient(to top,#000 58%,transparent 92%);
-    -webkit-mask-size:100% 260%;mask-size:100% 260%;-webkit-mask-position:0 0;mask-position:0 0;
-    animation:cardIn .7s cubic-bezier(.2,.8,.2,1) both}
-  @keyframes cardIn{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
-  .ic-kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:12px}
-  .ic-title{font-family:var(--disp);font-weight:700;font-size:clamp(24px,4.4vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 14px}
-  .ic-text{font-size:clamp(14px,2vw,17px);line-height:1.55;color:rgba(255,255,255,.95);margin:0 0 12px}
-  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2.1vw,19px);margin:0 0 20px;color:#fff}
-  .ic-go{background:#fff;color:#c0392b;border:none;border-radius:12px;padding:12px 22px;font-size:15px;font-weight:700;
-    cursor:pointer;font-family:var(--body);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    box-shadow:0 18px 55px rgba(232,84,30,.32);animation:cardIn .6s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes cardIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+  .relato-card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:radial-gradient(520px 220px at 88% -20%,rgba(255,255,255,.25),transparent 60%)}
+  .relato-card>*{position:relative;z-index:1}
+  .ic-kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:10px}
+  .relato-card .ic-title{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(23px,4.2vw,37px);line-height:1.12;letter-spacing:-.02em;margin:0 0 12px;color:#fff}
+  .relato-card .ic-title::before{display:none}
+  .ic-text{font-size:clamp(14px,1.9vw,17px);line-height:1.55;color:rgba(255,255,255,.96);margin:0 0 12px;max-width:72ch}
+  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2vw,19px);margin:0 0 18px;color:#fff}
+  .ic-go{background:#fff;color:#c0392b;border:none;border-radius:12px;padding:12px 22px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--body);box-shadow:0 6px 20px rgba(0,0,0,.18);transition:transform .15s}
   .ic-go:hover{transform:translateY(-1px)}
-  .ic-foot{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:13px;color:rgba(255,255,255,.92);line-height:1.6}
-  .intro-card.burn{animation:burnAway 1.25s cubic-bezier(.4,0,.65,1) forwards}
+  .relato-card.burn{animation:burnAway 1.15s cubic-bezier(.4,0,.65,1) forwards}
   @keyframes burnAway{
     0%{opacity:1;filter:blur(0) brightness(1)}
-    28%{filter:blur(1px) brightness(1.55) saturate(1.5);box-shadow:0 0 70px 14px rgba(255,120,20,.75),0 0 30px 4px rgba(255,220,120,.8) inset}
-    100%{opacity:0;transform:translateY(-46px) scale(1.03);filter:blur(11px) brightness(2.1);
-      -webkit-mask-position:0 -165%;mask-position:0 -165%}}
-  .ember{position:absolute;width:8px;height:8px;border-radius:50%;pointer-events:none;opacity:0;z-index:3;
-    background:radial-gradient(circle,#ffe6a0,#ff7a1a 58%,transparent 70%);filter:blur(.3px);
-    animation:ember 1.3s ease-out forwards}
+    30%{filter:blur(1px) brightness(1.5) saturate(1.4);box-shadow:0 0 60px 12px rgba(255,120,20,.7)}
+    100%{opacity:0;transform:translateY(-28px) scale(1.02);filter:blur(9px) brightness(1.9)}}
+  .ember{position:absolute;width:8px;height:8px;border-radius:50%;pointer-events:none;opacity:0;z-index:5;
+    background:radial-gradient(circle,#ffe6a0,#ff7a1a 58%,transparent 70%);filter:blur(.3px);animation:ember 1.2s ease-out forwards}
   @keyframes ember{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:1}
-    100%{opacity:0;transform:translate(var(--dx,0),-165px) scale(1.25)}}
+    100%{opacity:0;transform:translate(var(--dx,0),-150px) scale(1.25)}}
   /* Sidebar */
   .sidebar{position:fixed;top:0;left:0;width:246px;height:100vh;overflow-y:auto;z-index:40;padding:20px 16px;
     background:linear-gradient(180deg,var(--side1),var(--side2));color:#e9f1fb;display:flex;flex-direction:column;
@@ -195,19 +190,6 @@
 </style>
 </head>
 <body>
-<div class="intro" id="intro">
-  <div class="intro-card" id="introCard">
-    <div class="ic-kicker">Observatorio abierto · Perú</div>
-    <h2 class="ic-title">Tenemos un ecosistema startup.<br>El impacto es otra historia.</h2>
-    <p class="ic-text">Hay concursos, fondos del Estado, aceleradoras y titulares que celebran millones.
-      Pero al cruzar los datos, el relato cambia: <b>casi todo el capital viene de afuera</b>,
-      el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
-      <b>repetir el concurso</b>, no del mercado.</p>
-    <p class="ic-q">¿De verdad estamos generando impacto? Entra y míralo con datos.</p>
-    <button class="ic-go" onclick="skipIntro()">Entrar al observatorio&nbsp;▸</button>
-    <div class="ic-foot">💜 Apóyanos · Yape <b>940&nbsp;584&nbsp;307</b><br>Más dashboards en <b>unimauro.github.io</b></div>
-  </div>
-</div>
 <button class="menu-btn" aria-label="menú" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
 <aside class="sidebar">
   <div class="brand"><span class="mk"></span>Radiografía de las Startups en Perú</div>
@@ -246,6 +228,19 @@
 </header>
 
 <div class="wrap">
+
+  <section class="relato-wrap" id="relato">
+    <div class="relato-card" id="relatoCard">
+      <div class="ic-kicker">Observatorio abierto · Perú</div>
+      <h2 class="ic-title">Tenemos un ecosistema startup.<br>El impacto es otra historia.</h2>
+      <p class="ic-text">Hay concursos, fondos del Estado, aceleradoras y titulares que celebran
+        millones. Pero al cruzar los datos, el relato cambia: <b>casi todo el capital viene de
+        afuera</b>, el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
+        <b>repetir el concurso</b>, no del mercado.</p>
+      <p class="ic-q">¿De verdad estamos generando impacto? Baja y míralo con datos.</p>
+      <button class="ic-go" onclick="burnRelato()">Entrar al observatorio&nbsp;▸</button>
+    </div>
+  </section>
 
   <section id="inicio">
     <h2>El ecosistema de un vistazo</h2>
@@ -776,22 +771,20 @@ function simular(){
 function closeSide(){document.querySelector('.sidebar').classList.remove('open');}
 
 
-(function(){
-  const intro=document.getElementById('intro'), card=document.getElementById('introCard'); if(!intro||!card) return;
-  let done=false, timer;
-  function burn(){
-    if(done) return; done=true; clearTimeout(timer);
-    for(let k=0;k<18;k++){const e=document.createElement('i');e.className='ember';
-      e.style.left=(6+Math.random()*88)+'%'; e.style.top=(30+Math.random()*55)+'%';
-      e.style.animationDelay=(Math.random()*0.35)+'s'; e.style.setProperty('--dx',(Math.random()*50-25)+'px');
-      intro.appendChild(e);}
-    card.classList.add('burn');
-    setTimeout(()=>intro.classList.add('done'),1000);
-    setTimeout(()=>{try{intro.remove()}catch(e){}} ,1900);
-  }
-  window.skipIntro=burn;
-  timer=setTimeout(burn, 14000);
-})();
+function burnRelato(){
+  const sec=document.getElementById('relato'), card=document.getElementById('relatoCard');
+  if(!card || card.classList.contains('burn')) return;
+  for(let k=0;k<18;k++){const e=document.createElement('i');e.className='ember';
+    e.style.left=(6+Math.random()*88)+'%'; e.style.top=(35+Math.random()*45)+'%';
+    e.style.animationDelay=(Math.random()*0.35)+'s'; e.style.setProperty('--dx',(Math.random()*50-25)+'px');
+    sec.appendChild(e);}
+  card.classList.add('burn');
+  const t=document.getElementById('inicio'); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+  setTimeout(()=>{sec.style.overflow='hidden';sec.style.maxHeight=sec.offsetHeight+'px';
+    requestAnimationFrame(()=>{sec.style.transition='max-height .7s ease,opacity .7s ease,margin .7s ease';
+      sec.style.maxHeight='0';sec.style.opacity='0';sec.style.margin='0';});},900);
+  setTimeout(()=>{try{sec.remove()}catch(e){}},1700);
+}
 </script>
 </body>
 </html>
