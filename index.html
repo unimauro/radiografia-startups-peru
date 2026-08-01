@@ -59,9 +59,60 @@
   .srcs{columns:2;column-gap:26px;font-size:12.5px}
   @media(max-width:560px){.srcs{columns:1}}
   a.btn{display:inline-block;margin-top:6px;font-size:13px;color:var(--azul);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:8px}
+  /* Sidebar */
+  .sidebar{position:fixed;top:0;left:0;width:238px;height:100vh;overflow-y:auto;background:var(--azul2);
+    color:#eaf2fb;padding:18px 16px;z-index:40;display:flex;flex-direction:column}
+  .sidebar .brand{font-weight:800;font-size:15px;line-height:1.25;margin-bottom:14px;color:#fff}
+  .sidebar nav{display:flex;flex-direction:column;gap:2px;flex:1}
+  .sidebar nav a{color:#cfe0f2;text-decoration:none;font-size:13.5px;padding:7px 10px;border-radius:8px}
+  .sidebar nav a:hover{background:rgba(255,255,255,.12);color:#fff}
+  .side-foot{border-top:1px solid rgba(255,255,255,.16);padding-top:12px;margin-top:10px;font-size:12px;color:#bcd4ec}
+  .side-foot b{color:#fff}
+  .side-foot a{color:#a8cbef}
+  .yape{background:rgba(255,255,255,.12);border-radius:10px;padding:9px 11px;margin:9px 0;font-size:12.5px;line-height:1.5}
+  .main{margin-left:238px}
+  .menu-btn{display:none;position:fixed;top:12px;right:12px;z-index:50;background:var(--azul2);color:#fff;
+    border:none;border-radius:8px;width:44px;height:44px;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
+  /* Simulador */
+  .sim label{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:var(--ink);padding:7px 0;cursor:pointer;border-bottom:1px solid var(--line)}
+  .sim input{margin-top:3px;width:17px;height:17px;accent-color:var(--azul)}
+  .sim .go{margin-top:14px;background:var(--azul);color:#fff;border:none;border-radius:10px;padding:11px 20px;font-size:14px;font-weight:700;cursor:pointer}
+  .sim-res{margin-top:14px;padding:16px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:none}
+  .sim-res .score{font-size:32px;font-weight:800}
+  .gaugebar{height:12px;border-radius:99px;background:var(--line);overflow:hidden;margin:8px 0}
+  .gaugebar>i{display:block;height:100%;border-radius:99px;transition:width .5s}
+  @media(max-width:900px){
+    .sidebar{transform:translateX(-100%);transition:transform .25s;box-shadow:0 0 40px rgba(0,0,0,.4)}
+    .sidebar.open{transform:translateX(0)}
+    .main{margin-left:0}
+    .menu-btn{display:block}
+  }
 </style>
 </head>
 <body>
+<button class="menu-btn" aria-label="menú" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+<aside class="sidebar">
+  <div class="brand">🇵🇪 Radiografía de las Startups en Perú</div>
+  <nav>
+    <a href="#inicio" onclick="closeSide()">Inicio</a>
+    <a href="#dinero" onclick="closeSide()">1 · El dinero</a>
+    <a href="#concursos" onclick="closeSide()">2 · Concursos del Estado</a>
+    <a href="#postulaciones" onclick="closeSide()">3 · Postulaciones y repetidos</a>
+    <a href="#vc" onclick="closeSide()">4 · Quién levantó más</a>
+    <a href="#emprende" onclick="closeSide()">5 · Quién emprende</a>
+    <a href="#investigacion" onclick="closeSide()">7 · Qué dice la investigación</a>
+    <a href="#simulador" onclick="closeSide()">🎲 Simulador de supervivencia</a>
+    <a href="#faq" onclick="closeSide()">Preguntas frecuentes</a>
+    <a href="#origen" onclick="closeSide()">Datos de origen</a>
+    <a href="#biblio" onclick="closeSide()">Bibliografía</a>
+  </nav>
+  <div class="side-foot">
+    <div>Por <b>Carlos Mauro Cárdenas</b><br>Observatorio abierto · agosto 2026</div>
+    <div class="yape">💜 <b>Apóyanos</b><br>Yape / Plin: <b>[coloca tu número]</b></div>
+    <a href="https://github.com/unimauro/radiografia-startups-peru">Repositorio en GitHub ↗</a>
+  </div>
+</aside>
+<main class="main">
 <header>
   <div class="wrap">
     <div class="flag">🇵🇪 ⚡</div>
@@ -75,12 +126,12 @@
 
 <div class="wrap">
 
-  <section>
+  <section id="inicio">
     <h2>El ecosistema de un vistazo</h2>
     <div class="grid tiles" id="tiles"></div>
   </section>
 
-  <section>
+  <section id="dinero">
     <h2>1. El dinero <span class="badge ok">dato duro</span></h2>
     <p class="lead">La inversión de venture capital cayó desde el récord de 2021, y casi todo el
       capital viene de afuera: en 2024, <b>97% fue extranjero</b>. El sector fintech concentra la
@@ -102,7 +153,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="concursos">
     <h2>2. Los concursos del Estado <span class="badge ok">dato duro</span></h2>
     <p class="lead">Desde 2014, StartUp Perú (ProInnóvate/PRODUCE) entregó capital semilla no
       reembolsable a más de mil proyectos. ProInnóvate en total suma <b>~S/ 268M en 1,400
@@ -119,7 +170,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="postulaciones">
     <h2>3. Postulaciones reales a StartUp Perú <span class="badge ok">microdatos</span></h2>
     <p class="lead">Parseamos las publicaciones de resultados de ProInnóvate (Emprendimientos
       Innovadores 9G–13G, Dinámicos y el programa PLUG de atracción de emprendedores):
@@ -135,12 +186,13 @@
       <div class="card"><h3>Aprobados en varias generaciones (más de un fondo)</h3>
         <p class="src">Fuente: ProInnóvate · cruce 9G–13G</p>
         <table id="tRep"></table>
-        <p class="note">81 solicitantes fueron aprobados 2+ veces (201 postularon en varias
+        <button class="btn" id="repMore" data-o="0" style="margin-top:8px">Ver los 82 ▾</button>
+        <p class="note">Con el rango del grant, un aprobado 4 veces pudo acumular <b>hasta ~S/ 600k</b> en fondos públicos (estimado). 82 solicitantes fueron aprobados 2+ veces (201 postularon en varias
           generaciones). Datos de "aprobado en evaluación", no siempre = desembolso final.</p></div>
     </div>
   </section>
 
-  <section>
+  <section id="vc">
     <h2>4. ¿Quién levantó más? (venture capital) <span class="badge ok">dato duro</span></h2>
     <p class="lead">La inversión privada está hiperconcentrada en pocas rondas. En 2021, solo
       <b>tres startups (Crehana, Favo y Chazki) concentraron el 83%</b> de todo lo invertido en el país.</p>
@@ -151,7 +203,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="emprende">
     <h2>5. ¿Quién emprende? <span class="badge">dato parcial</span></h2>
     <p class="lead">El perfil del fundador está fuertemente sesgado hacia Lima y educación
       superior. La foto todavía es incompleta (falta estrato de origen).</p>
@@ -176,7 +228,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="investigacion">
     <h2>7. Qué dice la investigación <span class="badge">tesis (cualitativas)</span></h2>
     <p class="lead">Revisamos 4 tesis peruanas (PUCP) sobre StartUp Perú. Son estudios de caso
       cualitativos —no traen estrato ni precariedad del fundador— pero dejan hallazgos citables,
@@ -207,7 +259,42 @@
       supervivencia de startups peruanas</i>.</p>
   </section>
 
-  <section>
+  <section id="simulador">
+    <h2>🎲 Simulador: ¿sobrevivirá tu startup? <span class="badge">ilustrativo</span></h2>
+    <p class="lead">Marca lo que aplica a tu proyecto. Calcula un <b>índice de resiliencia</b> según
+      los factores que la investigación asocia a sobrevivir (Dávila 2021, Alva del Solar 2018).
+      <b>No es un predictor validado</b> ni una probabilidad real — recuerda que ~90% no supera el
+      primer año.</p>
+    <div class="grid cards">
+      <div class="card sim">
+        <h3>Tu proyecto</h3>
+        <form id="simForm">
+          <label><input type="checkbox" data-w="20"><span>Validaste que <b>existe un mercado real</b> (clientes dispuestos a pagar).</span></label>
+          <label><input type="checkbox" data-w="16"><span>Tienes una <b>red de contactos / mentores</b> en tu sector.</span></label>
+          <label><input type="checkbox" data-w="14"><span>Tienes <b>equipo</b> (no emprendes en solitario).</span></label>
+          <label><input type="checkbox" data-w="14"><span>Cuentas con un <b>colchón</b> (ahorros o apoyo familiar) para sostenerte mientras emprendes.</span></label>
+          <label><input type="checkbox" data-w="10"><span>Tu producto se basa en <b>tecnología / innovación</b> real.</span></label>
+          <label><input type="checkbox" data-w="10"><span>El equipo tiene <b>experiencia previa</b> en el rubro.</span></label>
+          <label><input type="checkbox" data-w="8"><span>Trabajas con <b>metodología</b> (MVP, validación con clientes).</span></label>
+          <label><input type="checkbox" data-w="8"><span>Tienes <b>financiamiento</b> o capital semilla asegurado.</span></label>
+          <button type="button" class="go" onclick="simular()">Calcular mi índice</button>
+        </form>
+      </div>
+      <div class="card">
+        <div id="simRes" class="sim-res">
+          <div class="score" id="simScore"></div>
+          <div class="gaugebar"><i id="simGauge"></i></div>
+          <p id="simMsg" style="font-size:14px;margin:6px 0 0"></p>
+          <p id="simExtra" class="note"></p>
+        </div>
+        <p class="note">Simulador educativo y transparente: los pesos vienen de los factores más
+          mencionados por fundadores en la investigación cualitativa, no de un modelo estadístico.
+          Ojo: <b>sobrevivir ≠ facturar</b> — los fondos ayudan a seguir vivo, no a vender.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
     <h2>8. Preguntas frecuentes</h2>
     <div class="grid cards">
       <div class="card">
@@ -242,7 +329,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="origen">
     <h2>9. Datos de origen y metodología</h2>
     <p class="lead">Todo es reproducible y verificable. Estas son las fuentes exactas y cómo se
       construyó cada dato.</p>
@@ -279,6 +366,37 @@
     </div>
   </section>
 
+  <section id="biblio">
+    <h2>10. Bibliografía</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>Tesis sobre StartUp Perú (PUCP)</h3>
+        <ul style="font-size:12.8px;color:var(--muted);padding-left:1.1em;line-height:1.55">
+          <li>Dávila Urresti, C.; León, M.; Vela, J.; Vidal, M. (2021). <i>Factores Claves de Éxito de Startups: Caso StartUp Perú.</i> PUCP, MBA.</li>
+          <li>Alva del Solar, L.; Cruz Núñez, C. (2018). <i>El Concurso StartUp Perú en la gestión de desarrollo de emprendimientos innovadores: percepciones de beneficiarias 1ª–4ª generación.</i> PUCP.</li>
+          <li>Felices Ochoa, T.; Muñoz Arellano, E. (2020). <i>Elementos clave de crecimiento de startups de agrobiotecnología (StartUp Perú y Reto Bio, 2015–2018).</i> PUCP.</li>
+          <li>Martinez Uscamayta, M.; Urcia Guerrero, A. (2023). <i>Atributos clave de la marca empleadora en startups peruanas.</i> PUCP.</li>
+          <li><b>Pendiente:</b> Álvarez, J. (2021). <i>Determinantes de la supervivencia de startups peruanas.</i> Tesis doctoral, PUCP. (La única con datos cuantitativos de supervivencia.)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Referencias citadas y fuentes de datos</h3>
+        <ul style="font-size:12.8px;color:var(--muted);padding-left:1.1em;line-height:1.55">
+          <li>Goñi &amp; Reyes (2019) — beneficiarios sobreviven más pero no facturan más.</li>
+          <li>Morales (2017) — 90% de startups no supera el primer año.</li>
+          <li>Gage (2012) — "3 de cada 4 startups fracasan".</li>
+          <li><b>PECAP</b> — reportes anuales de venture capital (Perú).</li>
+          <li><b>ProInnóvate / StartUp Perú</b> — publicaciones de resultados EIN/EDI/PLUG.</li>
+          <li><b>GEM Perú</b> (ESAN); <b>StartupBlink</b> 2025.</li>
+          <li>Prensa: Gestión, Bloomberg Línea, Forbes, El Comercio, Infobae.</li>
+        </ul>
+        <p class="note">Síntesis completa en
+          <a href="docs/tesis_hallazgos.md" style="color:var(--azul)">docs/tesis_hallazgos.md</a>
+          y fuentes en <a href="DATA_SOURCES.md" style="color:var(--azul)">DATA_SOURCES.md</a>.</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="wrap">
     <h2 style="font-size:16px">Fuentes</h2>
     <div class="srcs">
@@ -295,6 +413,7 @@
     <a class="btn" href="data/">⤓ Descargar los datasets (CSV / JSON)</a>
   </footer>
 </div>
+</main>
 
 <script>
 const DATA = {
@@ -314,12 +433,88 @@ const DATA = {
   gen: {labels:["2013","2014","2015","2016","2017","8G","9G"], v:[14,39,36,66,85,105,80]},
   tipo: {labels:["Persona natural","Empresa"], v:[83,17]},
   repetidos: [
-    ["Andía Silvera Joel Jesús","4 veces","10G, 11G, 12G, 13G"],
-    ["Sáenz Acosta César Sandro","3 veces","9G, 10G, 11G, 12G"],
-    ["Ccopa Chumbes Wilson","3 veces","9G, 10G, 12G"],
-    ["Portocarrero Merino Kevin E.","3 veces","10G, 11G, 12G"],
-    ["Fernández García Miura Massiel","3 veces","11G, 12G, 13G"],
-    ["Ulloa Carbajal Lam Mao","3 veces","11G, 12G, 13G"]
+    ["ANDIA SILVERA JOEL JESUS",4,"10G, 11G, 12G, 13G"],
+    ["Saenz Acosta Cesar Sandro",3,"10G, 11G, 12G, 9G"],
+    ["Ccopa Chumbes Wilson",3,"10G, 12G, 9G"],
+    ["Jimenez Lechuga Hubert David",3,"10G, 12G, 9G"],
+    ["PORTOCARRERO MERINO KEVIN EDUARDO",3,"10G, 11G, 12G"],
+    ["FERNANDEZ GARCIA MIURA MASSIEL",3,"11G, 12G, 13G"],
+    ["ULLOA CARBAJAL LAM MAO",3,"11G, 12G, 13G"],
+    ["Berrocal Cueto Jhordan",2,"10G, 11G, 9G"],
+    ["Aguilar Marcos James Brandon",2,"10G, 11G, 9G"],
+    ["La Chira Marquez Axel Nickolas",2,"10G, 13G, 9G"],
+    ["Veliz Gonzales Alexander Luis",2,"10G, 11G, 9G"],
+    ["OROS PEREZ MICHAEL NET",2,"10G, 11G, 13G"],
+    ["SALAS REINOSO PATRICIA CECILIA",2,"10G, 12G, 13G"],
+    ["MEDINA JIMENEZ PATRICIA",2,"11G, 12G, 13G"],
+    ["BROSSARD CASTILLO JAIME ALEJANDRO",2,"11G, 12G, 13G"],
+    ["Kawat S.A.C.",2,"13G, 9G"],
+    ["Rapimoney S.A.C.",2,"10G, 9G"],
+    ["Laverio Pajuelo Anghelo Jesus",2,"10G, 9G"],
+    ["Borja Parra Miguel Angel",2,"10G, 9G"],
+    ["2JS Operaciones S.A.C.",2,"13G, 9G"],
+    ["Condori Huayna Manuel Alejandro",2,"10G, 9G"],
+    ["Lopez De Romaña Fernandez Sofia",2,"10G, 9G"],
+    ["Ankallpa Jaguar Sac",2,"11G, 9G"],
+    ["Salazar Cervantes Diego Sebastian",2,"11G, 9G"],
+    ["Intedi Peru S.A.C.",2,"10G, 9G"],
+    ["Unco Carpool S.A.C.",2,"10G, 9G"],
+    ["Juan Carlos Medina Pantoja",2,"10G, 9G"],
+    ["Palomino Vallejo Rocio Isabel",2,"10G, 9G"],
+    ["Firbid Finanzas Digitales S.A.C.",2,"10G, 9G"],
+    ["Siccha Tarrillo Paúl Martin",2,"13G, 9G"],
+    ["Quispe Mamani Yuri Eberson",2,"11G, 9G"],
+    ["Añazgo Barrantes Francisco Jesus",2,"13G, 9G"],
+    ["Cristian Richard Saico Ccope",2,"10G, 9G"],
+    ["Canales Gallegos Jose Angelo",2,"10G, 9G"],
+    ["Atamari Aldazabal Owen Rivaldo",2,"10G, 9G"],
+    ["Agendalo S.A.C.",2,"10G, 9G"],
+    ["Diaz Knutzen Jose Antonio",2,"11G, 9G"],
+    ["Cognita Conecta Education S.A.C.",2,"10G, 9G"],
+    ["Barcena Rodriguez Rene Henry",2,"11G, 9G"],
+    ["Sandoval Flores David Aldair",2,"10G, 9G"],
+    ["Zarate Sousa Jose Armando",2,"10G, 9G"],
+    ["Velazco Arenas Yamir Angelo",2,"10G, 9G"],
+    ["TEJADA ARCE ERICK GONZALO",2,"10G, 13G"],
+    ["PRADO LOPEZ IVAN EDGARD",2,"10G, 13G"],
+    ["ADRIAZOLA LOZADA ALEJANDRO RAUL",2,"10G, 11G"],
+    ["BENLOS S.A.C.",2,"10G, 13G"],
+    ["DE LA FUENTE VIGIL CESAR ENRRIQUE",2,"10G, 12G"],
+    ["DECATECA S.A.C.S",2,"10G, 13G"],
+    ["SUCNO QUIROZ AMERICO MICHAEL",2,"10G, 11G"],
+    ["MOSAIHUATE GUERRERO ELMER EDUARDO",2,"10G, 11G"],
+    ["BERYLLIUM DEVELOPMENT COMPANY S.A.C.",2,"10G, 13G"],
+    ["VAISMAN GONZALEZ SOLMAN",2,"10G, 11G"],
+    ["DEEP SKILL ACADEMY S.A.C.",2,"10G, 13G"],
+    ["AMERI FIERRO ARACELLY MASSIEL",2,"11G, 12G"],
+    ["CHUNGA SAAVEDRA ARTURO RAYMUNDO",2,"11G, 12G"],
+    ["SAAVEDRA VALDIVIA EDUARD YERMAIN",2,"11G, 12G"],
+    ["VELASQUEZ MAGUIÑA FELIPE ELEODORO",2,"11G, 12G"],
+    ["TORRES VARGAS MIGUEL",2,"11G, 13G"],
+    ["CRUZADO BOCANEGRA FRANCISCO DANIEL",2,"11G, 12G"],
+    ["LUIS CASTILLO DILAN ALEXANDER",2,"11G, 12G"],
+    ["ARIAS CALLE NAISSER",2,"11G, 13G"],
+    ["CERVANTES ESPONDA JULIO CESAR",2,"11G, 12G"],
+    ["FÉLIX SOLIS AZCARATE",2,"11G, 12G"],
+    ["CABANILLAS PARDO LENIN",2,"11G, 12G"],
+    ["PERUAGROSECURE S.A.C.",2,"11G, 12G"],
+    ["TINA SURE S.A.C.",2,"11G, 13G"],
+    ["GONZALES OBLITAS CESAR DAYBI",2,"11G, 13G"],
+    ["CASALLO TRAUCO ABNER FRANCISCO",2,"11G, 13G"],
+    ["QUISPE CALLAÑAUPA ROXANA",2,"11G, 13G"],
+    ["GUEVARA VIGO CROWEL JAMES",2,"12G, 13G"],
+    ["AMACIFUEN MAUTINO JOSE DAVID",2,"12G, 13G"],
+    ["CHAVEZ CALLUPE DORCAS ROSA",2,"12G, 13G"],
+    ["DE CASANOVA PAZ LEONARDO PAUL",2,"12G, 13G"],
+    ["ALVA AGUIRRE JONATHAN RENZO",2,"12G, 13G"],
+    ["PLAZA VILLANUEVA ENRIQUE EDUARDO",2,"12G, 13G"],
+    ["LLANOS MENDOZA LENIS JHONATAN",2,"12G, 13G"],
+    ["MONTOYA PAZ JUAN CARLOS",2,"12G, 13G"],
+    ["HUAYTA COLQUE ROY ALFREDO",2,"12G, 13G"],
+    ["BALDEON CARLOS LESLY RUTH",2,"12G, 13G"],
+    ["LARA PAJUELO ALEJANDRO MARCO VICENTE",2,"12G, 13G"],
+    ["PASCO LIZARRAGA IVAN",2,"12G, 13G"],
+    ["SUAREZ ARRATEA YOSSEC YOSEFER",2,"12G, 13G"]
   ],
   rondas: [
     ["Crehana","Serie B","US$ 70M","Edtech","2021"],
@@ -334,7 +529,9 @@ const DATA = {
     ["Proyectos StartUp Perú","1,000+"],
     ["Inversión StartUp Perú","S/ 60M+"],
     ["Total ProInnóvate","S/ 268M · 1,400 emp."],
-    ["Grant por startup","S/ 67k – 150k"],
+    ["Monto — Innovadores (EIN)","S/ 50k – 150k"],
+    ["Monto — Dinámicos (EDI)","S/ 140k – 150k"],
+    ["Monto — Alto Impacto","S/ 500k"],
     ["Entidades de incubación/aceleración","38"],
     ["Regiones top tras Lima","Piura, Arequipa, La Libertad"]
   ]
@@ -348,9 +545,15 @@ document.getElementById('tiles').innerHTML = DATA.tiles.map(t=>
   `<div class="tile"><div class="n">${t.n}</div><div class="l">${t.l}</div></div>`).join('');
 document.getElementById('tSP').innerHTML = "<tbody>"+DATA.sp.map(r=>
   `<tr><td>${r[0]}</td><td class="r"><b>${r[1]}</b></td></tr>`).join('')+"</tbody>";
-document.getElementById('tRep').innerHTML =
-  "<thead><tr><th>Solicitante</th><th>Aprobado</th><th>Generaciones</th></tr></thead><tbody>"+
-  DATA.repetidos.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')+"</tbody>";
+(function(){
+  const rep=DATA.repetidos, N=10, el=document.getElementById('tRep');
+  const head="<thead><tr><th>Solicitante</th><th>Aprob.</th><th>Generaciones</th></tr></thead>";
+  const row=r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}\u00d7</td><td>${r[2]}</td></tr>`;
+  const render=all=>{el.innerHTML=head+"<tbody>"+(all?rep:rep.slice(0,N)).map(row).join('')+"</tbody>";};
+  render(false);
+  const btn=document.getElementById('repMore');
+  btn.onclick=()=>{const open=btn.dataset.o==='1';render(!open);btn.dataset.o=open?'0':'1';btn.textContent=open?`Ver los ${rep.length} \u25be`:'Ver menos \u25b4';};
+})();
 document.getElementById('tRondas').innerHTML =
   "<thead><tr><th>Startup</th><th>Ronda</th><th class='r'>Monto</th><th>Sector</th><th>Año</th></tr></thead><tbody>"+
   DATA.rondas.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class='r'>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('')+"</tbody>";
@@ -373,6 +576,28 @@ new Chart(cTipo,{type:'doughnut',data:{labels:DATA.tipo.labels,datasets:[{data:D
 new Chart(cFactores,{type:'bar',data:{labels:DATA.factores.labels,datasets:[{data:DATA.factores.v,backgroundColor:NARANJA,borderRadius:6}]},
   options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:noLegend,
     scales:{x:{grid,title:{display:true,text:'nº de menciones'}},y:{grid:{display:false}}}}});
+
+function simular(){
+  let s=0; document.querySelectorAll('#simForm input:checked').forEach(i=>s+=+i.dataset.w);
+  const res=document.getElementById('simRes'); res.style.display='block';
+  const score=document.getElementById('simScore'), g=document.getElementById('simGauge');
+  score.textContent=s+' / 100';
+  let color,msg;
+  if(s<35){color='#b23b3b';msg='<b>Alto riesgo.</b> Por debajo del promedio. Falta lo esencial: valida el mercado y arma red y equipo antes de lanzarte.';}
+  else if(s<60){color='#e08a1e';msg='<b>Riesgo medio.</b> En l\u00ednea con el promedio del ecosistema. Refuerza los factores que te faltan.';}
+  else if(s<80){color='#2f6fb2';msg='<b>Resiliencia por encima del promedio.</b> Tienes varios factores clave; cuida el mercado y tu colch\u00f3n.';}
+  else{color='#1b7a3d';msg='<b>Perfil resiliente.</b> Tienes casi todos los factores que la investigaci\u00f3n asocia a sobrevivir. Ojo: sobrevivir no es facturar.';}
+  score.style.color=color; g.style.width=s+'%'; g.style.background=color;
+  document.getElementById('simMsg').innerHTML=msg;
+  const checks=[...document.querySelectorAll('#simForm input')];
+  const extra=document.getElementById('simExtra');
+  extra.innerHTML = (checks[3] && !checks[3].checked)
+    ? 'Marcaste que <b>no</b> tienes colch\u00f3n: emprender desde la precariedad es m\u00e1s dif\u00edcil. El \u201c\u00e9xito\u201d suele estar sesgado hacia quienes pueden permitirse el riesgo.'
+    : '';
+  res.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function closeSide(){document.querySelector('.sidebar').classList.remove('open');}
+
 </script>
 </body>
 </html>
