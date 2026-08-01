@@ -44,3 +44,13 @@ bloquean datacenters o cambian de ruta (revisar manualmente). Sin URL = por conf
 - Muchas cifras viven en **PDFs** (PECAP, GEM) → extraer con parser y versionar el resultado.
 - La **capa social** (estrato, respaldo familiar, precariedad) NO está en estas bases → requiere
   microdatos GEM/ENAHO o **encuesta propia** a fundadores.
+
+## 6. Microdatos parseados (nuevo)
+- `scripts/parse_proinnovate.py` — descarga y parsea las publicaciones de resultados de StartUp Perú
+  (requiere `pdftotext`/poppler). Genera en `data/`:
+  - `proinnovate_postulaciones.(csv|json)` — 1,480 postulaciones (9G 2023 + 13G 2026): código, título,
+    solicitante, estado, sector aproximado, tipo de solicitante.
+  - `proinnovate_repetidos.json` — solicitantes que postularon/ganaron en más de una generación.
+  - `proinnovate_resumen.json` — agregados para el dashboard.
+- Ampliable: agregar URLs de 8G, 10G, 11G, 12G en `FUENTES` del script.
+- Directorio de incubadoras/aceleradoras de la Red ProInnóvate (38 entidades): PDF en el sitio de ProInnóvate.

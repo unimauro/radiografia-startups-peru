@@ -1,0 +1,26 @@
+{
+ "total_postulaciones": 1480,
+ "total_aprobados": 664,
+ "por_generacion": {
+  "13G": 981,
+  "9G": 499
+ },
+ "aprobados_por_sector": {
+  "Manufactura/Otros": 468,
+  "Software/IA": 73,
+  "Energía/Ambiental": 26,
+  "Agritech/Agro": 20,
+  "Fintech": 20,
+  "Educación/Edtech": 18,
+  "E-commerce/Retail": 12,
+  "Salud/Healthtech": 12,
+  "Foodtech/Alimentos": 10,
+  "Turismo": 5
+ },
+ "por_tipo_solicitante": {
+  "persona natural": 1170,
+  "empresa": 310
+ },
+ "solicitantes_repetidos": 12,
+ "repetidos_multi_generacion": 10
+}
