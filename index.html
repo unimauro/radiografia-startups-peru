@@ -125,7 +125,11 @@
   a.btn:hover,.sim .go:hover{filter:brightness(1.05)}
   /* Relato inline + fuego */
   .relato-wrap{margin:24px 0 10px;position:relative}
-  .relato-card{position:relative;overflow:hidden;border-radius:20px;padding:32px 30px;color:#fff;
+  .hero-stage{position:relative;margin-top:16px}
+  .hero-reveal{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;z-index:1}
+  .hero-thesis{font-family:var(--disp);font-weight:700;font-size:clamp(18px,2.8vw,29px);line-height:1.15;letter-spacing:-.01em;margin:2px 0 14px;color:#fff}
+  .hero-thesis b{color:#f2ad63}
+  .relato-card{position:relative;z-index:2;overflow:hidden;border-radius:18px;padding:24px 26px;color:#fff;
     background:linear-gradient(140deg,#d81e5b 0%,#e8541e 52%,#f7a621 100%);
     box-shadow:0 18px 55px rgba(232,84,30,.32);animation:cardIn .6s cubic-bezier(.2,.8,.2,1) both}
   @keyframes cardIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
@@ -133,10 +137,10 @@
     background:radial-gradient(520px 220px at 88% -20%,rgba(255,255,255,.25),transparent 60%)}
   .relato-card>*{position:relative;z-index:1}
   .ic-kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.9);margin-bottom:10px}
-  .relato-card .ic-title{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(23px,4.2vw,37px);line-height:1.12;letter-spacing:-.02em;margin:0 0 12px;color:#fff}
+  .relato-card .ic-title{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(19px,3.1vw,29px);line-height:1.14;letter-spacing:-.02em;margin:0 0 10px;color:#fff}
   .relato-card .ic-title::before{display:none}
-  .ic-text{font-size:clamp(14px,1.9vw,17px);line-height:1.55;color:rgba(255,255,255,.96);margin:0 0 12px;max-width:72ch}
-  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2vw,19px);margin:0 0 14px;color:#fff}
+  .ic-text{font-size:clamp(13px,1.7vw,15.5px);line-height:1.5;color:rgba(255,255,255,.96);margin:0 0 10px;max-width:72ch}
+  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(13.5px,1.8vw,16.5px);margin:0 0 14px;color:rgba(255,255,255,.95)}
   .ic-thesis{font-family:var(--disp);font-weight:700;font-size:clamp(16px,2.4vw,23px);line-height:1.22;
     margin:0 0 18px;color:#fff;padding-top:14px;border-top:1px solid rgba(255,255,255,.3)}
   .ic-thesis b{text-decoration:underline;text-decoration-color:rgba(255,255,255,.55);text-underline-offset:3px}
@@ -222,29 +226,29 @@
   <div class="wrap">
     <span class="kicker">🇵🇪 Observatorio abierto</span>
     <h1>Radiografía de las Startups en Perú</h1>
-    <p class="sub">Cuánto se invierte y en qué, quién gana los concursos del Estado, quién
-      logra emprender — y la pregunta que casi nadie cruza con datos: ¿el éxito startup es mérito
-      o es poder permitirse el riesgo?</p>
-    <div class="upd">Datos públicos recopilados en agosto 2026 · Fuentes citadas en cada gráfico</div>
-    <a class="hero-cta" href="#simulador">🎲 ¿Podrías lograr una startup? Simúlalo</a>
+    <div class="hero-stage" id="heroStage">
+      <div class="hero-reveal" id="heroReveal">
+        <p class="sub">Cuánto se invierte y en qué, quién gana los concursos del Estado, quién logra
+          emprender — y la pregunta que casi nadie cruza con datos:</p>
+        <p class="hero-thesis">¿El éxito startup es <b>mérito</b> o es <b>poder permitirse el riesgo</b>?</p>
+        <div class="upd">Datos públicos recopilados en agosto 2026 · Fuentes citadas en cada gráfico</div>
+        <a class="hero-cta" href="#simulador">🎲 ¿Podrías lograr una startup? Simúlalo</a>
+      </div>
+      <div class="relato-card" id="relatoCard">
+        <div class="ic-kicker">Observatorio abierto · Perú</div>
+        <h2 class="ic-title">Tenemos un ecosistema startup. El impacto es otra historia.</h2>
+        <p class="ic-text">Hay concursos, fondos del Estado, aceleradoras y titulares que celebran
+          millones. Pero al cruzar los datos, el relato cambia: <b>casi todo el capital viene de
+          afuera</b>, el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
+          <b>repetir el concurso</b>, no del mercado.</p>
+        <p class="ic-q">¿De verdad estamos generando impacto? Baja y míralo con datos.</p>
+        <button class="ic-go" onclick="burnRelato(true)">Entrar&nbsp;▸</button>
+      </div>
+    </div>
   </div>
 </header>
 
 <div class="wrap">
-
-  <section class="relato-wrap" id="relato">
-    <div class="relato-card" id="relatoCard">
-      <div class="ic-kicker">Observatorio abierto · Perú</div>
-      <h2 class="ic-title">Tenemos un ecosistema startup.<br>El impacto es otra historia.</h2>
-      <p class="ic-text">Hay concursos, fondos del Estado, aceleradoras y titulares que celebran
-        millones. Pero al cruzar los datos, el relato cambia: <b>casi todo el capital viene de
-        afuera</b>, el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
-        <b>repetir el concurso</b>, no del mercado.</p>
-      <p class="ic-q">¿De verdad estamos generando impacto? Baja y míralo con datos.</p>
-      <p class="ic-thesis">¿El éxito startup es <b>mérito</b> o es <b>poder permitirse el riesgo</b>?</p>
-      <button class="ic-go" onclick="burnRelato(true)">Entrar al observatorio&nbsp;▸</button>
-    </div>
-  </section>
 
   <section id="inicio">
     <h2>El ecosistema de un vistazo</h2>
@@ -776,20 +780,16 @@ function closeSide(){document.querySelector('.sidebar').classList.remove('open')
 
 
 function burnRelato(doScroll){
-  const sec=document.getElementById('relato'), card=document.getElementById('relatoCard');
+  const card=document.getElementById('relatoCard'), stage=document.getElementById('heroStage');
   if(!card || card.classList.contains('burn')) return;
   for(let k=0;k<18;k++){const e=document.createElement('i');e.className='ember';
-    e.style.left=(6+Math.random()*88)+'%'; e.style.top=(35+Math.random()*45)+'%';
+    e.style.left=(6+Math.random()*88)+'%'; e.style.top=(28+Math.random()*50)+'%';
     e.style.animationDelay=(Math.random()*0.35)+'s'; e.style.setProperty('--dx',(Math.random()*50-25)+'px');
-    sec.appendChild(e);}
-  card.classList.add('burn');
+    (stage||card).appendChild(e);}
+  card.classList.add('burn'); card.style.pointerEvents='none';   // no colapsa: se desvanece y revela la tesis
   if(doScroll){const t=document.getElementById('inicio'); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});}
-  setTimeout(()=>{sec.style.overflow='hidden';sec.style.maxHeight=sec.offsetHeight+'px';
-    requestAnimationFrame(()=>{sec.style.transition='max-height .7s ease,opacity .7s ease,margin .7s ease';
-      sec.style.maxHeight='0';sec.style.opacity='0';sec.style.margin='0';});},900);
-  setTimeout(()=>{try{sec.remove()}catch(e){}},1700);
 }
-// auto-cierre: se lee ~15s y se quema sola (sin arrastrar el scroll)
+// se lee ~15s y se quema sola, revelando la pregunta-tesis debajo
 (function(){ if(document.getElementById('relatoCard')) setTimeout(function(){ burnRelato(false); }, 15000); })();
 </script>
 </body>
