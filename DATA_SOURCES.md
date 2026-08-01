@@ -54,3 +54,10 @@ bloquean datacenters o cambian de ruta (revisar manualmente). Sin URL = por conf
   - `proinnovate_resumen.json` — agregados para el dashboard.
 - Ampliable: agregar URLs de 8G, 10G, 11G, 12G en `FUENTES` del script.
 - Directorio de incubadoras/aceleradoras de la Red ProInnóvate (38 entidades): PDF en el sitio de ProInnóvate.
+
+## 7. Tesis académicas (síntesis en docs/tesis_hallazgos.md)
+- Dávila et al. (2021, PUCP MBA) — factores de éxito StartUp Perú.
+- Alva del Solar & Cruz Núñez (2018, PUCP) — percepciones beneficiarias 1ª-4ª gen.
+- Felices & Muñoz (2020, PUCP) — crecimiento agrobiotech (StartUp Perú/Reto Bio).
+- Martinez & Urcia (2023, PUCP) — marca empleadora en startups.
+- PENDIENTE: Álvarez, J. (2021) tesis doctoral PUCP "Determinantes de la supervivencia de startups peruanas" (la única con datos cuantitativos de supervivencia).

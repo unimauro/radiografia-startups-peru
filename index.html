@@ -177,7 +177,38 @@
   </section>
 
   <section>
-    <h2>7. Preguntas frecuentes</h2>
+    <h2>7. Qué dice la investigación <span class="badge">tesis (cualitativas)</span></h2>
+    <p class="lead">Revisamos 4 tesis peruanas (PUCP) sobre StartUp Perú. Son estudios de caso
+      cualitativos —no traen estrato ni precariedad del fundador— pero dejan hallazgos citables,
+      sobre todo uno que sostiene la hipótesis del proyecto.</p>
+    <div class="grid cards">
+      <div class="card callout">
+        <h3>El hallazgo que sostiene la tesis</h3>
+        <p><b>Los beneficiarios de StartUp Perú sobreviven más, pero NO facturan
+          significativamente más</b> que los no beneficiarios. <span class="note">(Goñi &amp; Reyes
+          2019, cit. en Dávila et al. 2021.)</span></p>
+        <p>Es decir: el fondo ayuda a <i>seguir vivo</i>, no necesariamente a <i>vender</i> — la
+          señal de "viven del concurso".</p>
+        <ul>
+          <li><b>90% de las startups no sobrevive más de 1 año</b>; solo el 10% crece. <span class="note">(Morales 2017, cit. en Alva del Solar 2018.)</span></li>
+          <li><b>87%</b> de las beneficiarias dice que el financiamiento fue "lo que más influyó" del concurso. <span class="note">(Alva del Solar 2018.)</span></li>
+          <li>Predominan <b>ingenieros formados en la PUCP</b> — sesgo de élite/Lima. <span class="note">(Dávila 2021.)</span></li>
+        </ul>
+      </div>
+      <div class="card"><h3>Factores de éxito más mencionados</h3>
+        <p class="src">Fuente: Dávila et al. (2021), 19 casos · nº de menciones</p>
+        <div class="chartbox"><canvas id="cFactores"></canvas></div>
+        <p class="note">Lo más citado por fundadores "exitosos": encontrar un mercado y la red de
+          contactos. Nota: solo entrevista casos exitosos (sin grupo de fracaso).</p></div>
+    </div>
+    <p class="note" style="margin-top:6px">Detalle y bibliografía en
+      <a href="docs/tesis_hallazgos.md" style="color:var(--azul)">docs/tesis_hallazgos.md</a>.
+      Fuente pendiente clave: tesis doctoral de J. Álvarez (2021) sobre <i>determinantes de la
+      supervivencia de startups peruanas</i>.</p>
+  </section>
+
+  <section>
+    <h2>8. Preguntas frecuentes</h2>
     <div class="grid cards">
       <div class="card">
         <h3>¿Qué es este observatorio?</h3>
@@ -212,7 +243,7 @@
   </section>
 
   <section>
-    <h2>8. Datos de origen y metodología</h2>
+    <h2>9. Datos de origen y metodología</h2>
     <p class="lead">Todo es reproducible y verificable. Estas son las fuentes exactas y cómo se
       construyó cada dato.</p>
     <div class="grid cards">
@@ -297,6 +328,7 @@ const DATA = {
     ["B89","Semilla","US$ 2–3M","Fintech / neobanco","—"]
   ],
   perfil: {labels:["De Lima","Hombres","Con pregrado","Mujeres"], v:[67.3,69.8,56.2,29.8]},
+  factores: {labels:["Uso de tecnología","Red de contactos","Talento del líder","Equipo adecuado","Encontrar un mercado","Metodología"], v:[31,30,29,29,28,25]},
   sp: [
     ["Generaciones desde 2014","13"],
     ["Proyectos StartUp Perú","1,000+"],
@@ -338,6 +370,9 @@ new Chart(cPerfil,{type:'bar',data:{labels:DATA.perfil.labels,datasets:[{data:DA
     scales:{x:{grid,max:100,ticks:{callback:v=>v+'%'}},y:{grid:{display:false}}}}});
 new Chart(cTipo,{type:'doughnut',data:{labels:DATA.tipo.labels,datasets:[{data:DATA.tipo.v,backgroundColor:[NARANJA,AZUL],borderWidth:2,borderColor:css('--surface')}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{position:'bottom'}}}});
+new Chart(cFactores,{type:'bar',data:{labels:DATA.factores.labels,datasets:[{data:DATA.factores.v,backgroundColor:NARANJA,borderRadius:6}]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:noLegend,
+    scales:{x:{grid,title:{display:true,text:'nº de menciones'}},y:{grid:{display:false}}}}});
 </script>
 </body>
 </html>
