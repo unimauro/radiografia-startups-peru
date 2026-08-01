@@ -136,7 +136,10 @@
   .relato-card .ic-title{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(23px,4.2vw,37px);line-height:1.12;letter-spacing:-.02em;margin:0 0 12px;color:#fff}
   .relato-card .ic-title::before{display:none}
   .ic-text{font-size:clamp(14px,1.9vw,17px);line-height:1.55;color:rgba(255,255,255,.96);margin:0 0 12px;max-width:72ch}
-  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2vw,19px);margin:0 0 18px;color:#fff}
+  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2vw,19px);margin:0 0 14px;color:#fff}
+  .ic-thesis{font-family:var(--disp);font-weight:700;font-size:clamp(16px,2.4vw,23px);line-height:1.22;
+    margin:0 0 18px;color:#fff;padding-top:14px;border-top:1px solid rgba(255,255,255,.3)}
+  .ic-thesis b{text-decoration:underline;text-decoration-color:rgba(255,255,255,.55);text-underline-offset:3px}
   .ic-go{background:#fff;color:#c0392b;border:none;border-radius:12px;padding:12px 22px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--body);box-shadow:0 6px 20px rgba(0,0,0,.18);transition:transform .15s}
   .ic-go:hover{transform:translateY(-1px)}
   .relato-card.burn{animation:burnAway 1.15s cubic-bezier(.4,0,.65,1) forwards}
@@ -238,7 +241,8 @@
         afuera</b>, el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
         <b>repetir el concurso</b>, no del mercado.</p>
       <p class="ic-q">¿De verdad estamos generando impacto? Baja y míralo con datos.</p>
-      <button class="ic-go" onclick="burnRelato()">Entrar al observatorio&nbsp;▸</button>
+      <p class="ic-thesis">¿El éxito startup es <b>mérito</b> o es <b>poder permitirse el riesgo</b>?</p>
+      <button class="ic-go" onclick="burnRelato(true)">Entrar al observatorio&nbsp;▸</button>
     </div>
   </section>
 
@@ -771,7 +775,7 @@ function simular(){
 function closeSide(){document.querySelector('.sidebar').classList.remove('open');}
 
 
-function burnRelato(){
+function burnRelato(doScroll){
   const sec=document.getElementById('relato'), card=document.getElementById('relatoCard');
   if(!card || card.classList.contains('burn')) return;
   for(let k=0;k<18;k++){const e=document.createElement('i');e.className='ember';
@@ -779,12 +783,14 @@ function burnRelato(){
     e.style.animationDelay=(Math.random()*0.35)+'s'; e.style.setProperty('--dx',(Math.random()*50-25)+'px');
     sec.appendChild(e);}
   card.classList.add('burn');
-  const t=document.getElementById('inicio'); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+  if(doScroll){const t=document.getElementById('inicio'); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});}
   setTimeout(()=>{sec.style.overflow='hidden';sec.style.maxHeight=sec.offsetHeight+'px';
     requestAnimationFrame(()=>{sec.style.transition='max-height .7s ease,opacity .7s ease,margin .7s ease';
       sec.style.maxHeight='0';sec.style.opacity='0';sec.style.margin='0';});},900);
   setTimeout(()=>{try{sec.remove()}catch(e){}},1700);
 }
+// auto-cierre: se lee ~15s y se quema sola (sin arrastrar el scroll)
+(function(){ if(document.getElementById('relatoCard')) setTimeout(function(){ burnRelato(false); }, 15000); })();
 </script>
 </body>
 </html>
