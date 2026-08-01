@@ -87,10 +87,11 @@
       mayor parte.</p>
     <div class="grid cards">
       <div class="card"><h3>Inversión VC por año (US$ millones)</h3>
-        <p class="src">Fuente: PECAP</p>
+        <p class="src">Fuente: PECAP · 2018–2024</p>
         <div class="chartbox"><canvas id="cVC"></canvas></div>
-        <p class="note">2021 fue atípico: la ronda de Crehana (~US$70M) fue más de la mitad del año.
-          Las cifras varían según la fuente y metodología.</p></div>
+        <p class="note">De US$9M en 2018 al récord de US$124M en 2021 (la ronda de Crehana, ~US$70M,
+          fue más de la mitad de ese año), y luego caída sostenida. Las cifras varían según la
+          fuente y metodología.</p></div>
       <div class="card"><h3>Origen del capital (2024)</h3>
         <p class="src">Fuente: PECAP</p>
         <div class="chartbox"><canvas id="cOrigen"></canvas></div>
@@ -107,9 +108,11 @@
       reembolsable a más de mil proyectos. ProInnóvate en total suma <b>~S/ 268M en 1,400
       emprendimientos</b>. Grants de S/ 67k a S/ 150k, sin equity.</p>
     <div class="grid cards">
-      <div class="card"><h3>Ganadores por generación reciente</h3>
-        <p class="src">Fuente: ProInnóvate / gob.pe</p>
-        <div class="chartbox"><canvas id="cGen"></canvas></div></div>
+      <div class="card"><h3>Ganadores de StartUp Perú por año</h3>
+        <p class="src">Fuente: ProInnóvate / gob.pe · 2013–2017 y generaciones recientes</p>
+        <div class="chartbox"><canvas id="cGen"></canvas></div>
+        <p class="note">De 14 ganadores en 2013 a 85 en 2017; las generaciones recientes 8G+ (105)
+          y 9G (80) mantienen la escala. 13 generaciones desde 2014.</p></div>
       <div class="card"><h3>StartUp Perú / ProInnóvate en cifras</h3>
         <p class="src">Fuente: ProInnóvate / gob.pe</p>
         <table id="tSP"></table></div>
@@ -168,10 +171,10 @@ const DATA = {
     {n:"1,000+", l:"Proyectos de StartUp Perú desde 2014"},
     {n:"#67", l:"Perú en el ranking mundial (StartupBlink)"}
   ],
-  vc: {labels:["2021","2022","2023","2024"], v:[124.3,87,76.5,47]},
+  vc: {labels:["2018","2019","2020","2021","2022","2023","2024"], v:[9.1,21,46,124.3,87,76.5,47]},
   origen: {labels:["Extranjero","Nacional"], v:[97,3]},
   sector: {labels:["Fintech","Otros sectores"], v:[85.1,14.9]},
-  gen: {labels:["8G+","9G"], v:[105,80]},
+  gen: {labels:["2013","2014","2015","2016","2017","8G","9G"], v:[14,39,36,66,85,105,80]},
   perfil: {labels:["De Lima","Hombres","Con pregrado","Mujeres"], v:[67.3,69.8,56.2,29.8]},
   sp: [
     ["Generaciones desde 2014","13"],

@@ -1,12 +1,15 @@
 {
   "titulo": "Inversión de venture capital en startups peruanas (US$ millones)",
-  "fuente": "PECAP (vía Gestión, Bloomberg Línea, Infobae)",
-  "nota": "2021 fue atípico: incluye la ronda de Crehana (~US$70M, >50% del total del año). Las cifras varían según la fuente y metodología.",
+  "fuente": "PECAP (vía Gestión, Bloomberg Línea, Forbes, El Referente)",
+  "nota": "2021 fue el récord: incluye la ronda de Crehana (~US$70M, >50% del total). Las cifras varían según la fuente y metodología.",
   "serie": [
+    {"anio": 2018, "usd_m": 9.1, "operaciones": null},
+    {"anio": 2019, "usd_m": 21.0, "operaciones": 63},
+    {"anio": 2020, "usd_m": 46.0, "operaciones": null},
     {"anio": 2021, "usd_m": 124.3, "operaciones": null},
     {"anio": 2022, "usd_m": 87.0, "operaciones": 41},
     {"anio": 2023, "usd_m": 76.5, "operaciones": 23},
     {"anio": 2024, "usd_m": 47.0, "operaciones": 33}
   ],
-  "acumulado_4_anios_usd_m": 300
+  "acumulado_2018_2024_usd_m": 410.9
 }
