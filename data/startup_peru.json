@@ -1,0 +1,19 @@
+{
+  "programa": "StartUp Perú / ProInnóvate (Ministerio de la Producción)",
+  "fuente": "ProInnóvate / gob.pe / prensa",
+  "desde": 2014,
+  "generaciones": 13,
+  "proyectos_startup_peru": 1000,
+  "inversion_startup_peru_soles_m": 60,
+  "proinnovate_total_emprendimientos": 1400,
+  "proinnovate_total_soles_m": 268,
+  "entidades_incubacion_aceleracion": 38,
+  "grant_min_soles": 67000,
+  "grant_max_soles": 150000,
+  "regiones_top_despues_de_lima": ["Piura", "Arequipa", "La Libertad"],
+  "generaciones_recientes": [
+    {"gen": "8G+", "ganadores": 105, "regiones": 13, "grant_max_soles": 150000},
+    {"gen": "9G", "ganadores": 80, "regiones": 10, "grant_max_soles": 140000}
+  ],
+  "sectores_top_8g": ["Educación", "Salud", "Agritech", "E-commerce", "Fintech", "Software", "Foodtech"]
+}

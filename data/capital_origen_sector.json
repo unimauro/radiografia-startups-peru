@@ -1,0 +1,8 @@
+{
+  "anio": 2024,
+  "fuente": "PECAP",
+  "origen_capital": {"extranjero_pct": 97, "nacional_pct": 3},
+  "sector_fintech_pct": 85.1,
+  "sector_resto_pct": 14.9,
+  "etapa_temprana_pct": 50
+}

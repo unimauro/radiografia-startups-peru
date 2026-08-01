@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiografía de las Startups en Perú</title>
+<meta name="description" content="Observatorio de datos del ecosistema de startups de tecnología en Perú: inversión, concursos del Estado, perfil del fundador y la capa social.">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#f5f7fa; --surface:#ffffff; --ink:#1a2230; --muted:#5b6675;
+    --line:#e4e9f0; --azul:#2f6fb2; --azul2:#1f4e79; --naranja:#c65d1e;
+    --verde:#1b7a3d; --rojo:#b23b3b; --shadow:0 1px 3px rgba(20,30,50,.08),0 8px 24px rgba(20,30,50,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e1420; --surface:#161d2b; --ink:#e8edf5; --muted:#9aa6b8;
+      --line:#26304180; --azul:#5aa0e0; --azul2:#8bc0f0; --naranja:#e08a4a;
+      --verde:#4fb477; --shadow:0 1px 3px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.3);}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+  header{background:linear-gradient(135deg,var(--azul2),var(--azul));color:#fff;padding:38px 0 30px}
+  header .wrap{position:relative}
+  .flag{font-size:26px}
+  h1{margin:.2em 0 .1em;font-size:clamp(24px,4.5vw,36px);line-height:1.15}
+  .sub{opacity:.92;font-size:clamp(14px,2.2vw,17px);max-width:70ch}
+  .upd{margin-top:10px;font-size:12px;opacity:.8}
+  section{margin:34px 0}
+  h2{font-size:clamp(19px,3vw,24px);margin:0 0 4px;display:flex;align-items:center;gap:8px}
+  .lead{color:var(--muted);margin:0 0 16px;max-width:75ch}
+  .grid{display:grid;gap:16px}
+  .tiles{grid-template-columns:repeat(auto-fit,minmax(155px,1fr))}
+  .tile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px;box-shadow:var(--shadow)}
+  .tile .n{font-size:clamp(22px,3.4vw,30px);font-weight:800;color:var(--azul);letter-spacing:-.01em}
+  .tile .l{font-size:12.5px;color:var(--muted);margin-top:3px}
+  .cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 18px 14px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 2px;font-size:16px}
+  .card .src{font-size:11.5px;color:var(--muted);margin:0 0 10px}
+  .chartbox{position:relative;height:250px}
+  .note{font-size:11.5px;color:var(--muted);margin-top:8px}
+  .callout{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--naranja);
+    border-radius:12px;padding:18px 20px;box-shadow:var(--shadow)}
+  .callout h3{margin:.1em 0 .4em;color:var(--naranja)}
+  .callout ul{margin:.4em 0 .2em;padding-left:1.1em}
+  .callout li{margin:.28em 0}
+  .badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;
+    background:color-mix(in srgb,var(--naranja) 16%,transparent);color:var(--naranja);margin-left:6px}
+  .badge.ok{background:color-mix(in srgb,var(--verde) 16%,transparent);color:var(--verde)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600}
+  td.r,th.r{text-align:right}
+  footer{margin:40px 0 30px;color:var(--muted);font-size:13px}
+  footer a{color:var(--azul)}
+  .srcs{columns:2;column-gap:26px;font-size:12.5px}
+  @media(max-width:560px){.srcs{columns:1}}
+  a.btn{display:inline-block;margin-top:6px;font-size:13px;color:var(--azul);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:8px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="flag">🇵🇪 ⚡</div>
+    <h1>Radiografía de las Startups en Perú</h1>
+    <p class="sub">Cuánto se invierte y en qué, quién gana los concursos del Estado, quién
+      logra emprender — y la pregunta que casi nadie cruza con datos: ¿el éxito startup es mérito
+      o es poder permitirse el riesgo?</p>
+    <div class="upd">Datos públicos recopilados en agosto 2026 · Fuentes citadas en cada gráfico</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>El ecosistema de un vistazo</h2>
+    <div class="grid tiles" id="tiles"></div>
+  </section>
+
+  <section>
+    <h2>1. El dinero <span class="badge ok">dato duro</span></h2>
+    <p class="lead">La inversión de venture capital cayó desde el récord de 2021, y casi todo el
+      capital viene de afuera: en 2024, <b>97% fue extranjero</b>. El sector fintech concentra la
+      mayor parte.</p>
+    <div class="grid cards">
+      <div class="card"><h3>Inversión VC por año (US$ millones)</h3>
+        <p class="src">Fuente: PECAP</p>
+        <div class="chartbox"><canvas id="cVC"></canvas></div>
+        <p class="note">2021 fue atípico: la ronda de Crehana (~US$70M) fue más de la mitad del año.
+          Las cifras varían según la fuente y metodología.</p></div>
+      <div class="card"><h3>Origen del capital (2024)</h3>
+        <p class="src">Fuente: PECAP</p>
+        <div class="chartbox"><canvas id="cOrigen"></canvas></div>
+        <p class="note">Solo el 3% del capital invertido fue peruano.</p></div>
+      <div class="card"><h3>Concentración por sector (2024)</h3>
+        <p class="src">Fuente: PECAP · por monto de capital</p>
+        <div class="chartbox"><canvas id="cSector"></canvas></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Los concursos del Estado <span class="badge ok">dato duro</span></h2>
+    <p class="lead">Desde 2014, StartUp Perú (ProInnóvate/PRODUCE) entregó capital semilla no
+      reembolsable a más de mil proyectos. ProInnóvate en total suma <b>~S/ 268M en 1,400
+      emprendimientos</b>. Grants de S/ 67k a S/ 150k, sin equity.</p>
+    <div class="grid cards">
+      <div class="card"><h3>Ganadores por generación reciente</h3>
+        <p class="src">Fuente: ProInnóvate / gob.pe</p>
+        <div class="chartbox"><canvas id="cGen"></canvas></div></div>
+      <div class="card"><h3>StartUp Perú / ProInnóvate en cifras</h3>
+        <p class="src">Fuente: ProInnóvate / gob.pe</p>
+        <table id="tSP"></table></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. ¿Quién emprende? <span class="badge">dato parcial</span></h2>
+    <p class="lead">El perfil del fundador está fuertemente sesgado hacia Lima y educación
+      superior. La foto todavía es incompleta (falta estrato de origen).</p>
+    <div class="grid cards">
+      <div class="card"><h3>Perfil del fundador</h3>
+        <p class="src">Fuente: GEM Perú (ESAN)</p>
+        <div class="chartbox"><canvas id="cPerfil"></canvas></div>
+        <p class="note">Edad promedio: 37 años.</p></div>
+      <div class="card callout">
+        <h3>4. La capa social — la pregunta de fondo</h3>
+        <p>De qué estrato vienen los que sí logran salir adelante, cuánto pesa el respaldo
+          familiar y la precariedad laboral. <b>Esto no está en ninguna base de startups.</b></p>
+        <p><b>Hipótesis a testear:</b> el "éxito" startup estaría sesgado hacia quienes pudieron
+          <i>permitirse el riesgo</i> —colchón familiar, sin gastos urgentes que cubrir, Lima,
+          educación privada— más que hacia el mérito puro.</p>
+        <ul>
+          <li>Vía microdatos del <b>GEM</b> (motivación necesidad vs oportunidad).</li>
+          <li>Cruce con la <b>ENAHO</b> del INEI (estrato y precariedad).</li>
+          <li><b>Encuesta propia a fundadores</b> — la vía más directa.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <h2 style="font-size:16px">Fuentes</h2>
+    <div class="srcs">
+      <p>· <b>PECAP</b> — Asociación Peruana de Capital Semilla y Emprendedor · pecap.pe</p>
+      <p>· <b>ProInnóvate / StartUp Perú</b> — startup.proinnovate.gob.pe · gob.pe/proinnovate</p>
+      <p>· <b>GEM Perú</b> — Global Entrepreneurship Monitor (ESAN)</p>
+      <p>· <b>StartupBlink 2025</b> — ranking del ecosistema</p>
+      <p>· Prensa: Gestión, Bloomberg Línea, Infobae, El Comercio</p>
+    </div>
+    <p style="margin-top:14px">Observatorio abierto · datos versionados en el
+      <a href="https://github.com/unimauro/radiografia-startups-peru">repositorio</a>.
+      Las cifras de inversión varían por fuente y metodología. La capa social requiere datos
+      primarios (encuesta/microdatos).</p>
+    <a class="btn" href="data/">⤓ Descargar los datasets (CSV / JSON)</a>
+  </footer>
+</div>
+
+<script>
+const DATA = {
+  tiles: [
+    {n:"US$ 47M", l:"Inversión VC 2024 (33 operaciones)"},
+    {n:"97%", l:"Del capital invertido es extranjero (2024)"},
+    {n:"85%", l:"Del capital se fue a fintech (2024)"},
+    {n:"S/ 268M", l:"ProInnóvate en 1,400 emprendimientos"},
+    {n:"1,000+", l:"Proyectos de StartUp Perú desde 2014"},
+    {n:"#67", l:"Perú en el ranking mundial (StartupBlink)"}
+  ],
+  vc: {labels:["2021","2022","2023","2024"], v:[124.3,87,76.5,47]},
+  origen: {labels:["Extranjero","Nacional"], v:[97,3]},
+  sector: {labels:["Fintech","Otros sectores"], v:[85.1,14.9]},
+  gen: {labels:["8G+","9G"], v:[105,80]},
+  perfil: {labels:["De Lima","Hombres","Con pregrado","Mujeres"], v:[67.3,69.8,56.2,29.8]},
+  sp: [
+    ["Generaciones desde 2014","13"],
+    ["Proyectos StartUp Perú","1,000+"],
+    ["Inversión StartUp Perú","S/ 60M+"],
+    ["Total ProInnóvate","S/ 268M · 1,400 emp."],
+    ["Grant por startup","S/ 67k – 150k"],
+    ["Entidades de incubación/aceleración","38"],
+    ["Regiones top tras Lima","Piura, Arequipa, La Libertad"]
+  ]
+};
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const AZUL=css('--azul'),NARANJA=css('--naranja'),MUTED=css('--muted'),LINE=css('--line'),INK=css('--ink');
+Chart.defaults.color=MUTED; Chart.defaults.font.family=getComputedStyle(document.body).fontFamily;
+Chart.defaults.font.size=12;
+
+document.getElementById('tiles').innerHTML = DATA.tiles.map(t=>
+  `<div class="tile"><div class="n">${t.n}</div><div class="l">${t.l}</div></div>`).join('');
+document.getElementById('tSP').innerHTML = "<tbody>"+DATA.sp.map(r=>
+  `<tr><td>${r[0]}</td><td class="r"><b>${r[1]}</b></td></tr>`).join('')+"</tbody>";
+
+const grid={color:LINE}; const noLegend={legend:{display:false}};
+new Chart(cVC,{type:'bar',data:{labels:DATA.vc.labels,datasets:[{data:DATA.vc.v,backgroundColor:AZUL,borderRadius:6,maxBarThickness:56}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:noLegend,
+    scales:{y:{grid,ticks:{callback:v=>'$'+v+'M'}},x:{grid:{display:false}}}}});
+new Chart(cOrigen,{type:'doughnut',data:{labels:DATA.origen.labels,datasets:[{data:DATA.origen.v,backgroundColor:[NARANJA,AZUL],borderWidth:2,borderColor:css('--surface')}]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{position:'bottom'}}}});
+new Chart(cSector,{type:'doughnut',data:{labels:DATA.sector.labels,datasets:[{data:DATA.sector.v,backgroundColor:[AZUL,LINE],borderWidth:2,borderColor:css('--surface')}]},
+  options:{responsive:true,maintainAspectRatio:false,cutout:'62%',plugins:{legend:{position:'bottom'}}}});
+new Chart(cGen,{type:'bar',data:{labels:DATA.gen.labels,datasets:[{data:DATA.gen.v,backgroundColor:NARANJA,borderRadius:6,maxBarThickness:70}]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:noLegend,scales:{y:{grid},x:{grid:{display:false}}}}});
+new Chart(cPerfil,{type:'bar',data:{labels:DATA.perfil.labels,datasets:[{data:DATA.perfil.v,backgroundColor:AZUL,borderRadius:6}]},
+  options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:noLegend,
+    scales:{x:{grid,max:100,ticks:{callback:v=>v+'%'}},y:{grid:{display:false}}}}});
+</script>
+</body>
+</html>
