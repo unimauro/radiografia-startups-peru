@@ -123,13 +123,13 @@
     <h2>3. Postulaciones reales a StartUp Perú <span class="badge ok">microdatos</span></h2>
     <p class="lead">Parseamos las publicaciones de resultados de ProInnóvate (Emprendimientos
       Innovadores 9G–13G, Dinámicos y el programa PLUG de atracción de emprendedores):
-      <b>2,916 postulaciones</b> y <b>1,414 ganadores posibles</b> (aprobados en evaluación). Dos
+      <b>2,987 postulaciones</b> y <b>1,463 ganadores posibles</b> (aprobados en evaluación). Dos
       hallazgos fuertes: la mayoría postula como <b>persona natural</b>, y <b>81 solicitantes fueron
       aprobados en más de una generación</b> — recibieron más de un fondo del Estado; uno de ellos,
       <b>en 4 generaciones seguidas</b>.</p>
     <div class="grid cards">
       <div class="card"><h3>¿Quién postula? Persona vs empresa</h3>
-        <p class="src">Fuente: ProInnóvate · EIN 9G–13G + EDI + PLUG (2,916 postulaciones)</p>
+        <p class="src">Fuente: ProInnóvate · EIN 9G–13G + EDI 11G–13G + PLUG (2,987 postulaciones)</p>
         <div class="chartbox"><canvas id="cTipo"></canvas></div>
         <p class="note">83% postula como persona natural (aún sin constituir empresa).</p></div>
       <div class="card"><h3>Aprobados en varias generaciones (más de un fondo)</h3>
@@ -172,6 +172,78 @@
           <li>Cruce con la <b>ENAHO</b> del INEI (estrato y precariedad).</li>
           <li><b>Encuesta propia a fundadores</b> — la vía más directa.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Preguntas frecuentes</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>¿Qué es este observatorio?</h3>
+        <p class="note" style="font-size:13px">Un proyecto abierto que junta datos públicos del
+          ecosistema de startups peruanas —inversión, concursos del Estado, perfil del fundador— y
+          plantea la pregunta que casi nadie cruza con datos: si emprender con éxito depende más del
+          respaldo social que del mérito.</p>
+        <h3 style="margin-top:12px">¿De dónde salen los datos?</h3>
+        <p class="note" style="font-size:13px">De fuentes públicas: PECAP (inversión), ProInnóvate
+          (resultados de concursos, en PDF, que parseamos), GEM Perú (perfil) y StartupBlink. Cada
+          gráfico cita su fuente y los datasets son descargables.</p>
+        <h3 style="margin-top:12px">¿Qué significa "ganador posible"?</h3>
+        <p class="note" style="font-size:13px">Que fue <b>aprobado en la evaluación externa</b> de su
+          convocatoria. No siempre equivale al desembolso final (algunos no acreditan o no se
+          ratifican). Por eso decimos "posible".</p>
+      </div>
+      <div class="card">
+        <h3>¿Por qué faltan las primeras generaciones (1G–8G)?</h3>
+        <p class="note" style="font-size:13px">Sus resultados están en un formato antiguo distinto
+          (por ejemplo la 7G de 2019 no tiene columna de solicitante y usa otra terminología), que
+          necesita un parser aparte. Se dejó documentado como pendiente para no meter datos mal
+          parseados.</p>
+        <h3 style="margin-top:12px">¿El "monto" por ganador está?</h3>
+        <p class="note" style="font-size:13px">No en estos PDFs: solo el <b>rango del grant</b> por
+          categoría (S/ 50k–150k). El monto exacto por proyecto vendría del portal de transparencia.</p>
+        <h3 style="margin-top:12px">¿La "capa social" ya tiene datos?</h3>
+        <p class="note" style="font-size:13px">Todavía no: el estrato de origen y el respaldo familiar
+          no están en ninguna base de startups. Requieren microdatos del GEM/ENAHO o una encuesta
+          propia a fundadores.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Datos de origen y metodología</h2>
+    <p class="lead">Todo es reproducible y verificable. Estas son las fuentes exactas y cómo se
+      construyó cada dato.</p>
+    <div class="grid cards">
+      <div class="card">
+        <h3>Fuentes por bloque</h3>
+        <table>
+          <thead><tr><th>Bloque</th><th>Fuente</th></tr></thead>
+          <tbody>
+            <tr><td>Inversión VC (2018–2024)</td><td>PECAP (vía Gestión, Bloomberg Línea, Forbes)</td></tr>
+            <tr><td>Postulaciones y ganadores</td><td>ProInnóvate — PDFs de resultados EIN/EDI/PLUG</td></tr>
+            <tr><td>Perfil del fundador</td><td>GEM Perú (ESAN)</td></tr>
+            <tr><td>Ranking del ecosistema</td><td>StartupBlink 2025</td></tr>
+            <tr><td>Mayores rondas</td><td>PECAP / Forbes / Gestión</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Cómo se construyeron los microdatos</h3>
+        <p class="note" style="font-size:13px">Un script reproducible
+          (<b>scripts/parse_proinnovate.py</b>) descarga los PDF oficiales de resultados y los
+          convierte en tablas: código, título, solicitante, estado, generación, tipo y sector
+          aproximado. Detecta solicitantes repetidos entre generaciones. Ampliar es agregar una URL
+          a la lista de fuentes.</p>
+        <h3 style="margin-top:12px">Limitaciones (con transparencia)</h3>
+        <ul style="font-size:12.5px;color:var(--muted);padding-left:1.1em;margin:.3em 0">
+          <li>"Aprobado en evaluación" ≠ desembolso final garantizado.</li>
+          <li>Sin monto por proyecto; solo el rango del grant.</li>
+          <li>El sector se infiere del título (aproximado; muchos son marcas).</li>
+          <li>Las cifras de inversión varían por fuente y metodología.</li>
+        </ul>
+        <a class="btn" href="data/">⤓ Descargar todos los datasets (CSV / JSON)</a>
       </div>
     </div>
   </section>

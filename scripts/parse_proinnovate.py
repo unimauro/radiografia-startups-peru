@@ -22,7 +22,12 @@ FUENTES = [
   ("11G", "EIN", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/05/Resultados-Finales-EI-11G-.pdf", "ti"),
   ("12G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/06/Resultados-Preliminares-Emprendimientos-Innovadores-12G.pdf", "ti"),
   ("13G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EIN-13g.pdf", "ti"),
-  ("13G", "EDI", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EDI-13g.pdf", "ti"),
+  # Emprendimientos Dinámicos (EDI)
+  ("11G", "EDI", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/05/Resultados-Finales-EDI-11G.pdf", "ti"),
+  ("13G", "EDI", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/RESULTADOS_-PRELIMINARES_EMPRENDIMIENTOS_DINAMICOS_13G.pdf", "ti"),
+  # PENDIENTE: EDI 7G (2019) usa formato antiguo incompatible (sin columna solicitante, estado
+  # "ADMITIDO/Ingresa al comité"): requiere un parser aparte. No se incluye para no meter datos mal parseados.
+  # https://www.proinnovate.gob.pe/fincyt/doc/emprendimiento-dinamico/7G/resultados/StartUp_Peru_7G_Resultados_EDI.pdf
   # PLUG — Atracción de Emprendedores del Exterior (programa distinto; columnas invertidas)
   ("PLUG-4G",  "AEE", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/10/Resultados-Finales-Atraccion-de-Emprendedores-StartUpPeruPLUG4G.pdf", "sol"),
   ("PLUG-AEE", "AEE", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2024/12/Resultados-Finales-Startup-Peru-PLUG-Atraccion-de-Emprendedores.pdf", "sol"),

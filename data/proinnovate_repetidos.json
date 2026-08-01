@@ -1,6 +1,6 @@
 {
- "total_solicitantes_repetidos": 202,
- "repetidos_en_varias_generaciones": 199,
+ "total_solicitantes_repetidos": 204,
+ "repetidos_en_varias_generaciones": 201,
  "lista": [
   {
    "solicitante": "Saenz Acosta Cesar Sandro",
@@ -940,6 +940,31 @@
      "titulo": "M4T3RI4",
      "estado": "Aprobado",
      "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Ankallpa Jaguar Sac",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "FitJaguar Academy",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "FitJaguar Academy, la plataforma e-learning de deportes.",
+     "estado": "Aprobado*",
+     "anio": 2024
     }
    ]
   },
@@ -5140,6 +5165,31 @@
      "titulo": "Kawchi",
      "estado": "Desaprobado",
      "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "INTELCON GROUP S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Delta Dispatch - Gestión de Seguridad y Orden Público",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Delta Dispatch - Ecosistema Inteligente de Seguridad Ciudadana",
+     "estado": "Aprobado*",
+     "anio": 2025
     }
    ]
   },
