@@ -75,6 +75,15 @@
   h1{font-family:var(--disp);margin:.1em 0 .18em;font-size:clamp(28px,5.2vw,50px);line-height:1.05;font-weight:700;letter-spacing:-.02em}
   .sub{opacity:.95;font-size:clamp(15px,2.2vw,19px);max-width:60ch;font-weight:400}
   .upd{margin-top:16px;font-size:12.5px;opacity:.82}
+  .hero-cta{display:inline-block;margin-top:20px;background:#fff;color:#1f4e79;font-weight:700;
+    text-decoration:none;padding:12px 22px;border-radius:12px;font-size:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,.18);transition:transform .15s}
+  .hero-cta:hover{transform:translateY(-2px)}
+  .wtag{font-size:10.5px;font-weight:700;color:#fff;background:var(--naranja);border-radius:999px;
+    padding:2px 8px;margin-left:4px;white-space:nowrap;vertical-align:middle}
+  .foot-yape{margin-top:14px;padding:12px 16px;border-radius:12px;font-size:13px;
+    background:color-mix(in srgb,var(--naranja) 10%,var(--surface));border:1px solid var(--line)}
+  .foot-yape a{color:var(--azul)}
   section{margin:42px 0}
   h2{font-family:var(--disp);font-size:clamp(20px,3vw,26px);margin:0 0 6px;display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em}
   h2::before{content:"";width:5px;height:1.05em;border-radius:3px;background:linear-gradient(var(--azul),var(--naranja))}
@@ -114,23 +123,36 @@
   a.btn{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:600;color:var(--azul);text-decoration:none;
     border:1px solid var(--line);background:var(--surface2);padding:7px 13px;border-radius:9px;transition:.15s}
   a.btn:hover,.sim .go:hover{filter:brightness(1.05)}
-  /* Intro storytelling */
-  .intro{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;
-    background:linear-gradient(135deg,#0b2236,#143253 55%,#1f4e79);color:#fff;transition:opacity .85s ease;overflow:hidden}
-  .intro::after{content:"";position:absolute;inset:0;opacity:.6;pointer-events:none;
-    background:radial-gradient(680px 340px at 82% -8%,rgba(224,138,74,.4),transparent 60%)}
+  /* Intro relato + fuego */
+  .intro{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:5vw;
+    background:radial-gradient(120% 120% at 50% 0%,#2a0d0a,#12060a 60%,#0a0510);transition:opacity .9s ease;overflow:hidden}
   .intro.done{opacity:0;pointer-events:none}
-  .intro .slide{position:absolute;left:0;right:0;margin:0 auto;max-width:15ch;padding:0 8vw;font-family:var(--disp);
-    font-weight:700;font-size:clamp(27px,5.4vw,50px);line-height:1.14;letter-spacing:-.02em;
-    opacity:0;transform:translateY(16px) scale(.99);transition:opacity .7s ease,transform .7s ease;z-index:1}
-  .intro .slide.on{opacity:1;transform:none}
-  .intro .slide b{color:#f2ad63}
-  .intro .skip{position:absolute;bottom:24px;right:24px;z-index:2;background:rgba(255,255,255,.15);color:#fff;border:none;
-    border-radius:10px;padding:10px 18px;font-size:13px;cursor:pointer;font-family:var(--body);font-weight:600}
-  .intro .skip:hover{background:rgba(255,255,255,.24)}
-  .intro .prog{position:absolute;bottom:30px;left:0;right:0;z-index:2;display:flex;gap:7px;justify-content:center}
-  .intro .prog i{width:28px;height:3px;border-radius:2px;background:rgba(255,255,255,.22);transition:.4s}
-  .intro .prog i.on{background:#f2ad63}
+  .intro-card{position:relative;max-width:620px;width:100%;padding:38px 34px 26px;border-radius:22px;text-align:left;color:#fff;
+    background:linear-gradient(140deg,#d81e5b 0%,#e8541e 52%,#f7a621 100%);
+    box-shadow:0 30px 90px rgba(232,84,30,.45),0 0 0 1px rgba(255,255,255,.12) inset;
+    -webkit-mask-image:linear-gradient(to top,#000 58%,transparent 92%);mask-image:linear-gradient(to top,#000 58%,transparent 92%);
+    -webkit-mask-size:100% 260%;mask-size:100% 260%;-webkit-mask-position:0 0;mask-position:0 0;
+    animation:cardIn .7s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes cardIn{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+  .ic-kicker{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:12px}
+  .ic-title{font-family:var(--disp);font-weight:700;font-size:clamp(24px,4.4vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 14px}
+  .ic-text{font-size:clamp(14px,2vw,17px);line-height:1.55;color:rgba(255,255,255,.95);margin:0 0 12px}
+  .ic-q{font-family:var(--disp);font-weight:600;font-size:clamp(15px,2.1vw,19px);margin:0 0 20px;color:#fff}
+  .ic-go{background:#fff;color:#c0392b;border:none;border-radius:12px;padding:12px 22px;font-size:15px;font-weight:700;
+    cursor:pointer;font-family:var(--body);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+  .ic-go:hover{transform:translateY(-1px)}
+  .ic-foot{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);font-size:13px;color:rgba(255,255,255,.92);line-height:1.6}
+  .intro-card.burn{animation:burnAway 1.25s cubic-bezier(.4,0,.65,1) forwards}
+  @keyframes burnAway{
+    0%{opacity:1;filter:blur(0) brightness(1)}
+    28%{filter:blur(1px) brightness(1.55) saturate(1.5);box-shadow:0 0 70px 14px rgba(255,120,20,.75),0 0 30px 4px rgba(255,220,120,.8) inset}
+    100%{opacity:0;transform:translateY(-46px) scale(1.03);filter:blur(11px) brightness(2.1);
+      -webkit-mask-position:0 -165%;mask-position:0 -165%}}
+  .ember{position:absolute;width:8px;height:8px;border-radius:50%;pointer-events:none;opacity:0;z-index:3;
+    background:radial-gradient(circle,#ffe6a0,#ff7a1a 58%,transparent 70%);filter:blur(.3px);
+    animation:ember 1.3s ease-out forwards}
+  @keyframes ember{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:1}
+    100%{opacity:0;transform:translate(var(--dx,0),-165px) scale(1.25)}}
   /* Sidebar */
   .sidebar{position:fixed;top:0;left:0;width:246px;height:100vh;overflow-y:auto;z-index:40;padding:20px 16px;
     background:linear-gradient(180deg,var(--side1),var(--side2));color:#e9f1fb;display:flex;flex-direction:column;
@@ -174,13 +196,17 @@
 </head>
 <body>
 <div class="intro" id="intro">
-  <div class="slide">El <b>97%</b> del capital que financia a las startups peruanas viene de afuera.</div>
-  <div class="slide"><b>3</b> startups se llevaron el <b>83%</b> de toda la inversión de 2021.</div>
-  <div class="slide">El Estado dio fondos a <b>1,400</b> emprendimientos… y <b>82</b> personas cobraron más de una vez.</div>
-  <div class="slide">Una sola persona fue aprobada en <b>4</b> generaciones seguidas.</div>
-  <div class="slide">Ganar el fondo te ayuda a <b>sobrevivir</b>… no a <b>vender</b>. ¿Startups o concursos?</div>
-  <div class="prog" id="introProg"></div>
-  <button class="skip" onclick="skipIntro()">Saltar ▸</button>
+  <div class="intro-card" id="introCard">
+    <div class="ic-kicker">Observatorio abierto · Perú</div>
+    <h2 class="ic-title">Tenemos un ecosistema startup.<br>El impacto es otra historia.</h2>
+    <p class="ic-text">Hay concursos, fondos del Estado, aceleradoras y titulares que celebran millones.
+      Pero al cruzar los datos, el relato cambia: <b>casi todo el capital viene de afuera</b>,
+      el dinero se concentra en <b>poquísimas manos</b>, y varios "ganadores" viven de
+      <b>repetir el concurso</b>, no del mercado.</p>
+    <p class="ic-q">¿De verdad estamos generando impacto? Entra y míralo con datos.</p>
+    <button class="ic-go" onclick="skipIntro()">Entrar al observatorio&nbsp;▸</button>
+    <div class="ic-foot">💜 Apóyanos · Yape <b>940&nbsp;584&nbsp;307</b><br>Más dashboards en <b>unimauro.github.io</b></div>
+  </div>
 </div>
 <button class="menu-btn" aria-label="menú" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
 <aside class="sidebar">
@@ -201,7 +227,8 @@
   <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🌗 Cambiar tema</button>
   <div class="side-foot">
     <div>Por <b>Carlos Mauro Cárdenas</b><br>Observatorio abierto · agosto 2026</div>
-    <div class="yape">💜 <b>Apóyanos</b><br>Yape / Plin: <b>[coloca tu número]</b></div>
+    <div class="yape">💜 <b>Apóyanos</b><br>Yape / Plin: <b>940 584 307</b></div>
+    <a href="https://unimauro.github.io">Más dashboards en unimauro.github.io ↗</a>
     <a href="https://github.com/unimauro/radiografia-startups-peru">Repositorio en GitHub ↗</a>
   </div>
 </aside>
@@ -214,6 +241,7 @@
       logra emprender — y la pregunta que casi nadie cruza con datos: ¿el éxito startup es mérito
       o es poder permitirse el riesgo?</p>
     <div class="upd">Datos públicos recopilados en agosto 2026 · Fuentes citadas en cada gráfico</div>
+    <a class="hero-cta" href="#simulador">🎲 ¿Podrías lograr una startup? Simúlalo</a>
   </div>
 </header>
 
@@ -233,9 +261,10 @@
       <div class="card"><h3>Inversión VC por año (US$ millones)</h3>
         <p class="src">Fuente: PECAP · 2018–2024</p>
         <div class="chartbox"><canvas id="cVC"></canvas></div>
-        <p class="note">De US$9M en 2018 al récord de US$124M en 2021 (la ronda de Crehana, ~US$70M,
-          fue más de la mitad de ese año), y luego caída sostenida. Las cifras varían según la
-          fuente y metodología.</p></div>
+        <p class="note"><b>Es dinero levantado por startups peruanas (Perú, no LATAM).</b> De US$9M en
+          2018 al récord de US$124M en 2021 (la ronda de Crehana, ~US$70M, fue más de la mitad de ese
+          año), y luego caída sostenida. Para escala: todo LATAM rondó ~US$16 mil millones en 2021.
+          Las cifras varían según la fuente y metodología.</p></div>
       <div class="card"><h3>Origen del capital (2024)</h3>
         <p class="src">Fuente: PECAP</p>
         <div class="chartbox"><canvas id="cOrigen"></canvas></div>
@@ -279,8 +308,10 @@
         <p class="src">Fuente: ProInnóvate · cruce 9G–13G</p>
         <table id="tRep"></table>
         <button class="btn" id="repMore" data-o="0" style="margin-top:8px">Ver los 82 ▾</button>
-        <p class="note">Con el rango del grant, un aprobado 4 veces pudo acumular <b>hasta ~S/ 600k</b> en fondos públicos (estimado). 82 solicitantes fueron aprobados 2+ veces (201 postularon en varias
-          generaciones). Datos de "aprobado en evaluación", no siempre = desembolso final.</p></div>
+        <p class="note">Con el rango del grant, un aprobado 4 veces pudo acumular <b>hasta ~S/ 600k</b>
+          en fondos públicos (estimado). 82 solicitantes fueron aprobados 2+ veces (201 postularon en
+          varias generaciones). En total, <b>~13% de las aprobaciones (y del dinero) fue a personas ya
+          aprobadas antes</b>. Datos de "aprobado en evaluación", no siempre = desembolso final.</p></div>
     </div>
   </section>
 
@@ -305,18 +336,20 @@
         <div class="chartbox"><canvas id="cPerfil"></canvas></div>
         <p class="note">Edad promedio: 37 años.</p></div>
       <div class="card callout">
-        <h3>6. La capa social — la pregunta de fondo</h3>
-        <p>De qué estrato vienen los que sí logran salir adelante, cuánto pesa el respaldo
-          familiar y la precariedad laboral. <b>Esto no está en ninguna base de startups.</b></p>
-        <p><b>Hipótesis a testear:</b> el "éxito" startup estaría sesgado hacia quienes pudieron
-          <i>permitirse el riesgo</i> —colchón familiar, sin gastos urgentes que cubrir, Lima,
-          educación privada— más que hacia el mérito puro.</p>
-        <p><b>Primeras señales</b> que apuntan en esa dirección: los fundadores "exitosos" predominan de la <b>PUCP (universidad privada)</b> y de <b>Lima</b> (Dávila 2021; GEM). Matiz honesto: una tesis reciente (Pérez &amp; Huerta 2023) sostiene que la formación académica <i>no</i> sería determinante para sobrevivir. Falta el dato duro de estrato/respaldo — por eso hace falta una encuesta.</p>
+        <h3>6. La capa social — lo que los datos ya insinúan</h3>
+        <p>De qué estrato vienen los que sí logran salir adelante y cuánto pesa el respaldo familiar
+          frente al mérito. Con <b>lo que ya tenemos</b>, la foto se inclina hacia un lado:</p>
         <ul>
-          <li>Vía microdatos del <b>GEM</b> (motivación necesidad vs oportunidad).</li>
-          <li>Cruce con la <b>ENAHO</b> del INEI (estrato y precariedad).</li>
-          <li><b>Encuesta propia a fundadores</b> — la vía más directa.</li>
+          <li>Los fundadores "exitosos" predominan de la <b>PUCP</b> (universidad privada) y de
+            <b>Lima</b> (67% del país). <span class="note">(Dávila 2021; GEM.)</span></li>
+          <li>El arranque se financia con <b>fondos propios y familiares</b>: quien no los tiene,
+            parte en desventaja. <span class="note">(Pérez &amp; Huerta 2023.)</span></li>
+          <li>El fondo del Estado ayuda a <b>sobrevivir, no a facturar</b> — y sobrevivir sin ventas
+            solo es viable con colchón. <span class="note">(Goñi &amp; Reyes 2019.)</span></li>
         </ul>
+        <p>Todo apunta a que el "éxito" premia a quien <b>pudo permitirse el riesgo</b> más que al
+          mérito puro. Lo único que falta es el dato duro de estrato/precariedad — una
+          <b>encuesta a fundadores</b> (o microdatos GEM/ENAHO) lo cerraría.</p>
       </div>
     </div>
   </section>
@@ -357,20 +390,21 @@
     <h2>🎲 Simulador: ¿sobrevivirá tu startup? <span class="badge">ilustrativo</span></h2>
     <p class="lead">Marca lo que aplica a tu proyecto. Calcula un <b>índice de resiliencia</b> según
       los factores que la investigación asocia a sobrevivir (Dávila 2021, Alva del Solar 2018).
-      <b>No es un predictor validado</b> ni una probabilidad real — recuerda que ~90% no supera el
-      primer año.</p>
+      El <b>colchón familiar pesa 30%</b> — el factor que más inclina la balanza según la evidencia
+      de este observatorio. <b>No es un predictor validado</b> ni una probabilidad real — recuerda
+      que ~90% no supera el primer año.</p>
     <div class="grid cards">
       <div class="card sim">
         <h3>Tu proyecto</h3>
         <form id="simForm">
-          <label><input type="checkbox" data-w="20"><span>Validaste que <b>existe un mercado real</b> (clientes dispuestos a pagar).</span></label>
-          <label><input type="checkbox" data-w="16"><span>Tienes una <b>red de contactos / mentores</b> en tu sector.</span></label>
-          <label><input type="checkbox" data-w="14"><span>Tienes <b>equipo</b> (no emprendes en solitario).</span></label>
-          <label><input type="checkbox" data-w="14"><span>Cuentas con un <b>colchón</b> (ahorros o apoyo familiar) para sostenerte mientras emprendes.</span></label>
-          <label><input type="checkbox" data-w="10"><span>Tu producto se basa en <b>tecnología / innovación</b> real.</span></label>
-          <label><input type="checkbox" data-w="10"><span>El equipo tiene <b>experiencia previa</b> en el rubro.</span></label>
-          <label><input type="checkbox" data-w="8"><span>Trabajas con <b>metodología</b> (MVP, validación con clientes).</span></label>
-          <label><input type="checkbox" data-w="8"><span>Tienes <b>financiamiento</b> o capital semilla asegurado.</span></label>
+          <label><input type="checkbox" data-w="30"><span>Cuentas con un <b>colchón</b> (ahorros o apoyo familiar) para sostenerte mientras emprendes. <b class="wtag">pesa 30%</b></span></label>
+          <label><input type="checkbox" data-w="18"><span>Validaste que <b>existe un mercado real</b> (clientes dispuestos a pagar).</span></label>
+          <label><input type="checkbox" data-w="14"><span>Tienes una <b>red de contactos / mentores</b> en tu sector.</span></label>
+          <label><input type="checkbox" data-w="12"><span>Tienes <b>equipo</b> (no emprendes en solitario).</span></label>
+          <label><input type="checkbox" data-w="8"><span>Tu producto se basa en <b>tecnología / innovación</b> real.</span></label>
+          <label><input type="checkbox" data-w="8"><span>El equipo tiene <b>experiencia previa</b> en el rubro.</span></label>
+          <label><input type="checkbox" data-w="5"><span>Trabajas con <b>metodología</b> (MVP, validación con clientes).</span></label>
+          <label><input type="checkbox" data-w="5"><span>Tienes <b>financiamiento</b> o capital semilla asegurado.</span></label>
           <button type="button" class="go" onclick="simular()">Calcular mi índice</button>
         </form>
       </div>
@@ -401,6 +435,15 @@
         <p class="note" style="font-size:13px">De fuentes públicas: PECAP (inversión), ProInnóvate
           (resultados de concursos, en PDF, que parseamos), GEM Perú (perfil) y StartupBlink. Cada
           gráfico cita su fuente y los datasets son descargables.</p>
+        <h3 style="margin-top:12px">¿El dinero de VC se levantó en Perú o en toda LATAM?</h3>
+        <p class="note" style="font-size:13px">En <b>Perú</b>: es capital levantado por startups con
+          base en el país (PECAP), no de la región. Para escala: LATAM entero movió ~US$16&nbsp;mil
+          millones en 2021 y ~US$4&nbsp;mil millones en 2023 (LAVCA), con Brasil y México llevándose
+          ~70%. <b>Perú capta menos del 2%</b> de todo el VC de la región.</p>
+        <h3 style="margin-top:12px">¿Ese VC es de "las startups peruanas"?</h3>
+        <p class="note" style="font-size:13px">No de todas: es de un <b>puñado que sí logró levantar
+          capital de riesgo</b> (unas 33 operaciones en 2024, casi todo fintech). La enorme mayoría
+          de startups peruanas <b>nunca levanta VC</b> — viven de ventas, ahorros o concursos.</p>
         <h3 style="margin-top:12px">¿Qué significa "ganador posible"?</h3>
         <p class="note" style="font-size:13px">Que fue <b>aprobado en la evaluación externa</b> de su
           convocatoria. No siempre equivale al desembolso final (algunos no acreditan o no se
@@ -509,6 +552,8 @@
       <a href="https://github.com/unimauro/radiografia-startups-peru">repositorio</a>.
       Las cifras de inversión varían por fuente y metodología. La capa social requiere datos
       primarios (encuesta/microdatos).</p>
+    <div class="foot-yape">💜 <b>¿Te sirvió?</b> Apóyalo · Yape / Plin <b>940&nbsp;584&nbsp;307</b>
+      &nbsp;·&nbsp; Más dashboards en <a href="https://unimauro.github.io">unimauro.github.io</a></div>
     <a class="btn" href="data/">⤓ Descargar los datasets (CSV / JSON)</a>
   </footer>
 </div>
@@ -524,6 +569,8 @@ const DATA = {
     {n:"83%", l:"Postula al Estado como persona natural, no empresa"},
     {n:"81", l:"Solicitantes aprobados 2+ veces (más de un fondo)"},
     {n:"4×", l:"Una persona fue aprobada en 4 generaciones seguidas"},
+    {n:"~13%", l:"De las aprobaciones del Estado (9G–13G) fueron a gente ya aprobada antes"},
+    {n:"<2%", l:"Del venture capital de LATAM llega a Perú (vs región · LAVCA)"},
     {n:"83%", l:"Del VC 2021 se fue a solo 3 startups"}
   ],
   vc: {labels:["2018","2019","2020","2021","2022","2023","2024"], v:[9.1,21,46,124.3,87,76.5,47]},
@@ -699,7 +746,7 @@ function simular(){
   document.getElementById('simMsg').innerHTML=msg;
   const checks=[...document.querySelectorAll('#simForm input')];
   const extra=document.getElementById('simExtra');
-  extra.innerHTML = (checks[3] && !checks[3].checked)
+  extra.innerHTML = (checks[0] && !checks[0].checked)
     ? 'Marcaste que <b>no</b> tienes colch\u00f3n: emprender desde la precariedad es m\u00e1s dif\u00edcil. El \u201c\u00e9xito\u201d suele estar sesgado hacia quienes pueden permitirse el riesgo.'
     : '';
   res.scrollIntoView({behavior:'smooth',block:'nearest'});
@@ -708,15 +755,20 @@ function closeSide(){document.querySelector('.sidebar').classList.remove('open')
 
 
 (function(){
-  const intro=document.getElementById('intro'); if(!intro) return;
-  const slides=[...intro.querySelectorAll('.slide')], prog=document.getElementById('introProg');
-  prog.innerHTML=slides.map(()=>'<i></i>').join(''); const dots=[...prog.children];
-  let i=0,timer;
-  const show=n=>{slides.forEach((s,k)=>s.classList.toggle('on',k===n));dots.forEach((d,k)=>d.classList.toggle('on',k<=n));};
-  const end=()=>{intro.classList.add('done');setTimeout(()=>intro.remove(),900);};
-  const next=()=>{ if(i>=slides.length){end();return;} show(i); i++; timer=setTimeout(next,3800); };
-  window.skipIntro=()=>{clearTimeout(timer);end();};
-  next();
+  const intro=document.getElementById('intro'), card=document.getElementById('introCard'); if(!intro||!card) return;
+  let done=false, timer;
+  function burn(){
+    if(done) return; done=true; clearTimeout(timer);
+    for(let k=0;k<18;k++){const e=document.createElement('i');e.className='ember';
+      e.style.left=(6+Math.random()*88)+'%'; e.style.top=(30+Math.random()*55)+'%';
+      e.style.animationDelay=(Math.random()*0.35)+'s'; e.style.setProperty('--dx',(Math.random()*50-25)+'px');
+      intro.appendChild(e);}
+    card.classList.add('burn');
+    setTimeout(()=>intro.classList.add('done'),1000);
+    setTimeout(()=>{try{intro.remove()}catch(e){}} ,1900);
+  }
+  window.skipIntro=burn;
+  timer=setTimeout(burn, 14000);
 })();
 </script>
 </body>
