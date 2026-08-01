@@ -15,16 +15,20 @@ os.makedirs(TMP, exist_ok=True)
 ctx = ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ssl.CERT_NONE
 
 # Fuentes: (generación, concurso, año-ciclo, URL). Ampliable.
+# (generación, concurso, año, URL, orden de columnas: "ti"=título antes de solicitante / "sol"=al revés)
 FUENTES = [
-  ("9G",  "EIN", 2022, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/03/Resultados-Preliminares-Startup-Peru-9G-Emprendimientos-Innovadores-24.03.23.pdf"),
-  ("10G", "EIN", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/12/Resultados-Preliminares-Emprendimientos-Innovadores-StartUp-Peru-10G.pdf"),
-  ("11G", "EIN", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/05/Resultados-Finales-EI-11G-.pdf"),
-  ("12G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/06/Resultados-Preliminares-Emprendimientos-Innovadores-12G.pdf"),
-  ("13G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EIN-13g.pdf"),
-  ("13G", "EDI", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EDI-13g.pdf"),
+  ("9G",  "EIN", 2022, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/03/Resultados-Preliminares-Startup-Peru-9G-Emprendimientos-Innovadores-24.03.23.pdf", "ti"),
+  ("10G", "EIN", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/12/Resultados-Preliminares-Emprendimientos-Innovadores-StartUp-Peru-10G.pdf", "ti"),
+  ("11G", "EIN", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/05/Resultados-Finales-EI-11G-.pdf", "ti"),
+  ("12G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/06/Resultados-Preliminares-Emprendimientos-Innovadores-12G.pdf", "ti"),
+  ("13G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EIN-13g.pdf", "ti"),
+  ("13G", "EDI", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EDI-13g.pdf", "ti"),
+  # PLUG — Atracción de Emprendedores del Exterior (programa distinto; columnas invertidas)
+  ("PLUG-4G",  "AEE", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/10/Resultados-Finales-Atraccion-de-Emprendedores-StartUpPeruPLUG4G.pdf", "sol"),
+  ("PLUG-AEE", "AEE", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2024/12/Resultados-Finales-Startup-Peru-PLUG-Atraccion-de-Emprendedores.pdf", "sol"),
 ]
 
-CODE_RE = re.compile(r'\b(E[ID][IN]-\d+-P-\d+-\d+)\b')
+CODE_RE = re.compile(r'\b([A-Z]{2,4}-\d+-P-\d+-\d+)\b')
 ESTADOS = ["Aprobado*", "Aprobado", "Desaprobado", "No admitido", "No Admitido",
            "En Proceso", "Inadmisible", "Desestimado"]
 
@@ -57,7 +61,7 @@ def descargar(url, dest):
 def pdf_text(path):
     return subprocess.run(["pdftotext","-layout",path,"-"],capture_output=True,text=True).stdout
 
-def parse_pdf(text, gen, concurso, anio):
+def parse_pdf(text, gen, concurso, anio, orden="ti"):
     filas = []
     for line in text.splitlines():
         m = CODE_RE.search(line)
@@ -73,15 +77,16 @@ def parse_pdf(text, gen, concurso, anio):
         estado = ""; est_idx = None
         for i,c in enumerate(resto):
             if c in ESTADOS: estado=c; est_idx=i; break
-        titulo = resto[0] if len(resto)>0 else ""
-        # solicitante = la columna inmediatamente anterior al estado.
-        # Si el estado va pegado al título (est_idx<=1) no hay solicitante identificable.
+        # dos columnas de texto: la primera tras el código, y la anterior al estado
+        col_a = resto[0] if resto else ""
         if est_idx is not None:
-            solicitante = resto[est_idx-1] if est_idx-1 >= 1 else ""
+            col_b = resto[est_idx-1] if est_idx-1 >= 1 else ""
         else:
-            solicitante = resto[1] if len(resto) > 1 else ""
-        if solicitante in ESTADOS:  # nunca confundir estado con solicitante
-            solicitante = ""
+            col_b = resto[1] if len(resto) > 1 else ""
+        # orden "ti": [título, solicitante]; orden "sol": [solicitante, título]
+        titulo, solicitante = (col_a, col_b) if orden == "ti" else (col_b, col_a)
+        if solicitante in ESTADOS: solicitante = ""
+        if titulo in ESTADOS: titulo = ""
         anio_codigo = "20"+codigo.split("-")[-1] if codigo.split("-")[-1].isdigit() else str(anio)
         filas.append({
             "generacion": gen, "concurso": concurso, "anio": int(anio_codigo),
@@ -96,11 +101,11 @@ def norm(s): return re.sub(r'\s+',' ',s or '').strip().upper()
 
 def main():
     todo = []
-    for gen, concurso, anio, url in FUENTES:
+    for gen, concurso, anio, url, orden in FUENTES:
         dest = os.path.join(TMP, f"{gen}_{concurso}.pdf")
         try: descargar(url, dest)
         except Exception as e: print("skip",url,e); continue
-        filas = parse_pdf(pdf_text(dest), gen, concurso, anio)
+        filas = parse_pdf(pdf_text(dest), gen, concurso, anio, orden)
         print(f"{gen} {concurso}: {len(filas)} filas")
         todo += filas
 

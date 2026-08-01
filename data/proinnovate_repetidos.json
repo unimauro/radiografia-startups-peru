@@ -1,6 +1,6 @@
 {
- "total_solicitantes_repetidos": 201,
- "repetidos_en_varias_generaciones": 198,
+ "total_solicitantes_repetidos": 202,
+ "repetidos_en_varias_generaciones": 199,
  "lista": [
   {
    "solicitante": "Saenz Acosta Cesar Sandro",
@@ -5115,6 +5115,31 @@
      "titulo": "AtestacionDigital",
      "estado": "Aprobado*",
      "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BENITES CORREA FELIPE ANTONIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "13G",
+    "PLUG-4G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "13G",
+     "titulo": "Kawchi",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "PLUG-4G",
+     "titulo": "Kawchi",
+     "estado": "Desaprobado",
+     "anio": 2023
     }
    ]
   },

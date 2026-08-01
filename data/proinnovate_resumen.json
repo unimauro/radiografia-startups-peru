@@ -1,43 +1,46 @@
 {
- "total_postulaciones": 2820,
- "total_aprobados": 1347,
+ "total_postulaciones": 2916,
+ "total_aprobados": 1414,
  "generaciones_incluidas": [
   "10G",
   "11G",
   "12G",
   "13G",
-  "9G"
+  "9G",
+  "PLUG-4G"
  ],
  "por_generacion": {
   "13G": 981,
   "9G": 499,
   "11G": 492,
   "12G": 476,
-  "10G": 372
+  "10G": 372,
+  "PLUG-4G": 96
  },
  "ganadores_por_generacion": {
   "9G": 186,
   "10G": 174,
   "11G": 252,
   "12G": 257,
-  "13G": 478
+  "13G": 478,
+  "PLUG-4G": 67
  },
  "aprobados_por_sector": {
-  "Manufactura/Otros": 1005,
-  "Software/IA": 114,
+  "Manufactura/Otros": 1060,
+  "Software/IA": 118,
+  "Salud/Healthtech": 41,
   "Educación/Edtech": 40,
-  "Salud/Healthtech": 38,
-  "Energía/Ambiental": 34,
-  "Agritech/Agro": 34,
+  "Energía/Ambiental": 36,
+  "Agritech/Agro": 36,
   "Fintech": 30,
   "Foodtech/Alimentos": 25,
-  "E-commerce/Retail": 20,
+  "E-commerce/Retail": 21,
   "Turismo": 7
  },
  "por_tipo_solicitante": {
-  "persona natural": 2340,
-  "empresa": 480
+  "persona natural": 2435,
+  "empresa": 481
  },
- "solicitantes_repetidos": 201,
- "repetidos_multi_generacion": 198
+ "solicitantes_repetidos": 202,
+ "repetidos_multi_generacion": 199
 }
