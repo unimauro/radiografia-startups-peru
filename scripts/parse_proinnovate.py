@@ -16,9 +16,12 @@ ctx = ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ss
 
 # Fuentes: (generación, concurso, año-ciclo, URL). Ampliable.
 FUENTES = [
-  ("9G",  "EIN", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/03/Resultados-Preliminares-Startup-Peru-9G-Emprendimientos-Innovadores-24.03.23.pdf"),
-  ("13G", "EIN", 2026, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EIN-13g.pdf"),
-  ("13G", "EDI", 2026, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EDI-13g.pdf"),
+  ("9G",  "EIN", 2022, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/03/Resultados-Preliminares-Startup-Peru-9G-Emprendimientos-Innovadores-24.03.23.pdf"),
+  ("10G", "EIN", 2023, "https://startup.proinnovate.gob.pe/wp-content/uploads/2023/12/Resultados-Preliminares-Emprendimientos-Innovadores-StartUp-Peru-10G.pdf"),
+  ("11G", "EIN", 2024, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/05/Resultados-Finales-EI-11G-.pdf"),
+  ("12G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2025/06/Resultados-Preliminares-Emprendimientos-Innovadores-12G.pdf"),
+  ("13G", "EIN", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EIN-13g.pdf"),
+  ("13G", "EDI", 2025, "https://startup.proinnovate.gob.pe/wp-content/uploads/2026/02/Publicaciones-de-Resultados-EDI-13g.pdf"),
 ]
 
 CODE_RE = re.compile(r'\b(E[ID][IN]-\d+-P-\d+-\d+)\b')
@@ -105,12 +108,20 @@ def main():
     with open(os.path.join(DATA,"proinnovate_postulaciones.json"),"w",encoding="utf-8") as f:
         json.dump({"fuente":"ProInnóvate — publicaciones de resultados","total":len(todo),"filas":todo},
                   f, ensure_ascii=False, indent=1)
-    if todo:
-        cols = list(todo[0].keys())
-        with open(os.path.join(DATA,"proinnovate_postulaciones.csv"),"w",encoding="utf-8") as f:
+    def escribir_csv(path, filas):
+        if not filas: return
+        cols = list(filas[0].keys())
+        with open(path,"w",encoding="utf-8") as f:
             f.write(",".join(cols)+"\n")
-            for r in todo:
+            for r in filas:
                 f.write(",".join('"'+str(r[c]).replace('"',"'")+'"' for c in cols)+"\n")
+    escribir_csv(os.path.join(DATA,"proinnovate_postulaciones.csv"), todo)
+    # archivo separado de GANADORES (aprobados en evaluación)
+    ganadores = [r for r in todo if r["aprobado"]]
+    escribir_csv(os.path.join(DATA,"proinnovate_ganadores.csv"), ganadores)
+    with open(os.path.join(DATA,"proinnovate_ganadores.json"),"w",encoding="utf-8") as f:
+        json.dump({"nota":"Ganadores = aprobados en evaluación externa (etapa preliminar/final según generación).",
+                   "total":len(ganadores),"filas":ganadores}, f, ensure_ascii=False, indent=1)
 
     # repetidos: mismo solicitante en >1 postulación (y marcar si en >1 generación)
     by = collections.defaultdict(list)
@@ -136,10 +147,13 @@ def main():
     # resumen para el dashboard
     def cuenta(key, filtro=lambda r:True):
         c=collections.Counter(r[key] for r in todo if filtro(r)); return dict(c.most_common())
+    ganadores_por_gen = collections.Counter(r["generacion"] for r in todo if r["aprobado"])
     resumen = {
         "total_postulaciones": len(todo),
         "total_aprobados": sum(1 for r in todo if r["aprobado"]),
+        "generaciones_incluidas": sorted(set(r["generacion"] for r in todo)),
         "por_generacion": cuenta("generacion"),
+        "ganadores_por_generacion": dict(ganadores_por_gen),
         "aprobados_por_sector": cuenta("sector", lambda r:r["aprobado"]),
         "por_tipo_solicitante": cuenta("tipo_solicitante"),
         "solicitantes_repetidos": len(repetidos),

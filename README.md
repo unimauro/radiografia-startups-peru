@@ -41,7 +41,7 @@ Se construye con: (a) microdatos del GEM Perú, (b) cruce con la ENAHO del INEI,
 ## Datos duros ya encontrados (2024)
 - Inversión VC: **US$ 47M en 33 operaciones**; **97% capital extranjero**; **fintech ~85%** del monto (PECAP).
 - ~US$ 300M de VC en Perú en los últimos 4 años.
-- StartUp Perú 8G+: **105 emprendimientos ganadores** de 13 regiones; grants de **S/ 50k–150k** (no reembolsables, sin equity).
+- StartUp Perú (microdatos 9G–13G, 2022–2026): **2,820 postulaciones**, **1,347 ganadores posibles**; **81 aprobados 2+ veces** (uno en 4 generaciones seguidas). Grants S/ 50k–150k, sin equity.
 - Perfil (GEM): edad promedio **37**, **~70% hombres**, **56% con pregrado**, **67% de Lima**.
 - Fracaso tech global: ~**63% en 5 años**; LatAm capta solo **1–2%** del VC mundial.
 

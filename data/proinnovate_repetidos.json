@@ -1,7 +1,698 @@
 {
- "total_solicitantes_repetidos": 12,
- "repetidos_en_varias_generaciones": 10,
+ "total_solicitantes_repetidos": 201,
+ "repetidos_en_varias_generaciones": 198,
  "lista": [
+  {
+   "solicitante": "Saenz Acosta Cesar Sandro",
+   "postulaciones": 4,
+   "generaciones": [
+    "10G",
+    "11G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "CSR into practice www.cesarsaenz.com",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "CSR Canvas",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "El Arca de los negocios, plataforma de gestión social",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "El Arca de los negocios, plataforma de gestión social",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ANDIA SILVERA JOEL JESUS",
+   "postulaciones": 4,
+   "generaciones": [
+    "10G",
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 4,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Procero",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Procero, tu asistente digital para poder diseñar tu vivienda",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Procero",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "procero",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SACO MOSCOSO ALBERTO GABRIEL",
+   "postulaciones": 4,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "ZONA DE MEJORA - PLATAFORMA EMPRESARIAL",
+     "estado": "",
+     "anio": 2024
+    },
+    {
+     "gen": "11G",
+     "titulo": "LA LIEBRE - TIENDA Y DELIVERY",
+     "estado": "",
+     "anio": 2024
+    },
+    {
+     "gen": "11G",
+     "titulo": "RED DE SEGURIDAD EMPRESARIAL",
+     "estado": "",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "ZONA DE MEJORA",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Berrocal Cueto Jhordan",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Rover technology",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "FabChain",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "QAWAYSOFT",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Caceres Chalco Silvia Eugenia",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "QUI9",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "QUI9",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "QUI9",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Aguilar Marcos James Brandon",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "compradorlogistico",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "centro de procura",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "PROPLAY",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Quezada Palomino Diego Aarom",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Livanguard",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Livanguard",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "Aurum",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "La Chira Marquez Axel Nickolas",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "13G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "TekkaWasi",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "TEKKA WASI",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "TEKKAWASI - Sistema de Construcción de Viviendas mediante Impresión 3D de Concreto",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Veliz Gonzales Alexander Luis",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "ESDIP",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "U-salud",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "U-salud, plataforma de capacitación online del sector salud",
+     "estado": "Aprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Del Negro Garcia Sandro Enrique",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Sistema de Monitoreo de la Convivencia - SIMOC",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Sistema de Monitoreo de la Convivencia - SIMOC",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Sistema de Monitoreo de la Convivencia - SIMOC",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Ccopa Chumbes Wilson",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Eduboo",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "PREPASO",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "Prepaso AI",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Jimenez Lechuga Hubert David",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Cuidefy",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Cuidefy",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "CareGuard.es",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "OROS PEREZ MICHAEL NET",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Cinergia",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Cinergia",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Cinergia.lat",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ALVARADO MANRIQUE LUIS ALBERTO",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Buh Records",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Sonidos Inauditos, distribuidora de discos online",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Sonidos Inauditos",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PORTOCARRERO MERINO KEVIN EDUARDO",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Karretilla Concept",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "COFFEE PASS, somos una conexión digital al mundo del café",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "COFFEE PASS",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SALAS REINOSO PATRICIA CECILIA",
+   "postulaciones": 3,
+   "generaciones": [
+    "10G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Mirarte",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "ConectaMá",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "ConectaMá",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "AGUEDO RONCAL DAVID AMERICO",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Culturalismo, red de rutas naturales y culturales del Perú",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Culturalismo, la red de los emprendedores del Perú.",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "CULTURALISMO, las rutas de la peruanidad en un clic",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MEDINA JIMENEZ PATRICIA",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "MorfeoHome",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Freecover",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Freecover \"Descanso compartido\".",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "FERNANDEZ GARCIA MIURA MASSIEL",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Aprendly",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "APRENDLY NOW",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "APRENDLY NOW",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BROSSARD CASTILLO JAIME ALEJANDRO",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Pulso-Retail",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Pulso-Retail",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Pulso-Retail",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ULLOA CARBAJAL LAM MAO",
+   "postulaciones": 3,
+   "generaciones": [
+    "11G",
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 3,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "BioMASTER: Plataforma especializada en Educación STEM",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "BioMASTER: La Plataforma Virtual para Ciencias y STEM",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "BioMASTER",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
   {
    "solicitante": "Kawat S.A.C.",
    "postulaciones": 2,
@@ -24,6 +715,156 @@
      "titulo": "Kawát",
      "estado": "Aprobado*",
      "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Rapimoney S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "RAPIMONEY",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "RAPIMONEY",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Aqku.pe S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "AQKU",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "AQKU",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Parra Yzquierdo Milton Alberto",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Seniors",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Extramile",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Peñaloza Zapata Richard Rocky",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Rocky Nutrifit",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "En 1",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Laverio Pajuelo Anghelo Jesus",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Factpro",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Factpro",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Borja Parra Miguel Angel",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Maki Robotics",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "MAKI ROBOTICS",
+     "estado": "Aprobado",
+     "anio": 2023
     }
    ]
   },
@@ -53,6 +894,181 @@
    ]
   },
   {
+   "solicitante": "Condori Huayna Manuel Alejandro",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "MABIS",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "ZAMENIZ",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Lopez De Romaña Fernandez Sofia",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "M4T3RI4",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "M4T3RI4",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Quiroz Avila Ruben Alfredo",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Ornitorrinca",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Sonqollay",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Yaranga Meza Marco Antonio",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "MAQ",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "QAM",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Salazar Cervantes Diego Sebastian",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "LiVo",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Dentito",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Portamor S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "PORTAMOR",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "PORTAMOR",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Intedi Peru S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Fidelio",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "FIDELIO",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
    "solicitante": "Vidal Tipian Jonathan Ivan",
    "postulaciones": 2,
    "generaciones": [
@@ -74,6 +1090,31 @@
      "titulo": "INVASOR BIO",
      "estado": "Aprobado",
      "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Alfaro Diaz Huber Esteban",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "FarmaRadar",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "FitDev. Registra tu entrenamiento en el gym, mediante voz.",
+     "estado": "Aprobado",
+     "anio": 2024
     }
    ]
   },
@@ -103,6 +1144,156 @@
    ]
   },
   {
+   "solicitante": "Laif S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Laif",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Laif",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Unco Carpool S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "UnCo Carpool",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "UnCo Carpool",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Carbajal Barboza Luis Fernando",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Guía Pateperro",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Guía Pateperro",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Chura Aycachi Ronald",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "mariscos ilo",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "CAS sistema de cultivo acuponico",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Rivas del Aguila Luz Iracema",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "MC Donuts Iquitos",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Startup MC Donuts Iquitos Superfruit",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Atauchi Rojas Pavel Joser",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Treemeo",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Contempo Andino",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
    "solicitante": "Lopez Benites Richard Lenin",
    "postulaciones": 2,
    "generaciones": [
@@ -128,27 +1319,27 @@
    ]
   },
   {
-   "solicitante": "La Chira Marquez Axel Nickolas",
+   "solicitante": "Juan Carlos Medina Pantoja",
    "postulaciones": 2,
    "generaciones": [
-    "13G",
+    "10G",
     "9G"
    ],
    "en_varias_generaciones": true,
    "aprobado_alguna_vez": true,
-   "veces_aprobado": 1,
+   "veces_aprobado": 2,
    "proyectos": [
     {
      "gen": "9G",
-     "titulo": "TekkaWasi",
-     "estado": "Desaprobado",
+     "titulo": "NanoPharm Corporation S.A.C",
+     "estado": "Aprobado",
      "anio": 2022
     },
     {
-     "gen": "13G",
-     "titulo": "TEKKAWASI - Sistema de Construcción de Viviendas mediante Impresión 3D de Concreto",
-     "estado": "Aprobado*",
-     "anio": 2025
+     "gen": "10G",
+     "titulo": "NanoPharm Corporation S.A.C",
+     "estado": "Aprobado",
+     "anio": 2023
     }
    ]
   },
@@ -178,6 +1369,131 @@
    ]
   },
   {
+   "solicitante": "Rodriguez Matto Carlos Manuel",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "LEARNIT",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "12G",
+     "titulo": "LearnIT - Asesorias",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Barrera Seminario Luis Arturo",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Califica",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Califica",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Caztor Tech S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Caztor",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Caztor",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Palomino Vallejo Rocio Isabel",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Plazalud: Marketplace de salud",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Plazalud: Marketplace de Salud",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Firbid Finanzas Digitales S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "FIRBID",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Firbid",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
    "solicitante": "Siccha Tarrillo Paúl Martin",
    "postulaciones": 2,
    "generaciones": [
@@ -199,6 +1515,156 @@
      "titulo": "Skillramp",
      "estado": "Aprobado*",
      "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Montenegro Zeta Danilo Humberto",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "SirveFacil",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "CLINI",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Quispe Mamani Yuri Eberson",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Mindex",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "MINDEX",
+     "estado": "Aprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Ferrer Cuadrado Mirko Renato",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Balun Sports: plataforma deportiva",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Balun Sports: Tu plataforma deportiva",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Creator Ra Studio S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Creator Studio",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Creator",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Trinidad Villegas Manuel Ernesto",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "RETRARQTIL",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "RETRARQTIL",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Testhack Corp S.A.C.S.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Testhack.io",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Laboral.AI",
+     "estado": "Aprobado*",
+     "anio": 2023
     }
    ]
   },
@@ -228,6 +1694,231 @@
    ]
   },
   {
+   "solicitante": "Cristian Richard Saico Ccope",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Flyteek",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Flyteek",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Cruz Revilla Andy Jefferson",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Boxi Luv",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Itadori, Vegetales que los niños piden por voluntad propia",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Vilca Quispe Isabel",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "DESHOPSTORE",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "QRfazil",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Canales Gallegos Jose Angelo",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "UNAMANITO.NET",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "UNAMANITO.NET",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Atamari Aldazabal Owen Rivaldo",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Yala",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Yala",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Agendalo S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "AGÉNDALO",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Agéndalo",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Nataly Andrea Rojas Barnet",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Paulet Soft",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "FOOD FLOW",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Jardin.pe S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Jardin.Pe",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Jardin.Pe",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Villanueva Lavado Isaac",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "METRIC 360",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "METRIC 360",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
    "solicitante": "Zela Moraya Wester Edison",
    "postulaciones": 2,
    "generaciones": [
@@ -248,6 +1939,3181 @@
      "gen": "13G",
      "titulo": "Troomes.ai Talent Engine: Visión Artificial para encontrar tu candidato ideal",
      "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Diaz Knutzen Jose Antonio",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "F.U.B - FUI UN BANNER",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "FUB - Fui Un Banner",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Tecnologías Julca S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "FairPlay App",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "FAIR PLAY APP",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Cotrina Cueva Roger Javier",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Akisito App",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "GPS Tuco",
+     "estado": "Desaprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Cognita Conecta Education S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Cognita Conecta",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Cognita Conecta",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Quijano Donayre Luis Enrique",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "ECO VIO SAC",
+     "estado": "Desaprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "12G",
+     "titulo": "Arte Vio",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Mandujano Gutierrez Victor Jean Pierre",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Deep Skill Academy",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "Deep Skill",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Barcena Rodriguez Rene Henry",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "DepuraTec 1.1",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "11G",
+     "titulo": "DepuraTec 1.3",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "Lulli Meyer Franco Enrique",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Modo Pro Training",
+     "estado": "En Proceso",
+     "anio": 2022
+    },
+    {
+     "gen": "12G",
+     "titulo": "Modo Pro",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "Sandoval Flores David Aldair",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Fluctuante",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Fluctuante",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Zarate Sousa Jose Armando",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "Rastar.com",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "Rastrar.com",
+     "estado": "Aprobado*",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "Velazco Arenas Yamir Angelo",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "9G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "9G",
+     "titulo": "EFFECT 5.0",
+     "estado": "Aprobado",
+     "anio": 2022
+    },
+    {
+     "gen": "10G",
+     "titulo": "BIOMINER - HEALTH",
+     "estado": "Aprobado",
+     "anio": 2023
+    }
+   ]
+  },
+  {
+   "solicitante": "MAGUIÑA MAZA HALLEY FACUNDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "TINKUY",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "TIKTUY",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VARGAS ALEGRIA MANUEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "AIdeaText",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "AIdeaText",
+     "estado": "Aprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "QUIROZ BURGOS MARIA LOURDES",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "ÉPICA",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "ÉPICA TÚ DECIDES",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "INCA ACHAMIZO EFRAIN",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "NATURAL SUPERFOODS MARKET",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "EFRAIN INCA ACHAMIZO (ECO & NATURAL MARKET)",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GONZALEZ AGIP OMAR ALEXANDER",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Netfiting",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "NETFITING",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "TEJADA ARCE ERICK GONZALO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Smart Triage",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Waterku",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "HERRERA PEREZ EDER GUILLERMO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "SMART e-Health",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "SMART Lab Perú",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PRADO LOPEZ IVAN EDGARD",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Coffe roasting curve analysis",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "CAFINKA: Tostar con control, repetir con confianza",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MELENDEZ BERNUY CARLOS ANDRES",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Capitán",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Casitos",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ADRIAZOLA LOZADA ALEJANDRO RAUL",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Agilia",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Agilia, plataforma de ai-learning para emprendedores",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "BENLOS S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Benlos",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Banquea: Plataforma web para entrenamiento personalizado para los exámenes de las facultades de la salud.",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "KHUYAY KAWTHANI PERU S.A.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "KAWTHANI",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "KHUYAY KAWTHANI PERU S.A",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BENITEZ CAMPOS JAVIER",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "SE FELIZ ACADEMY",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Se Feliz Academy: Felicidad y Bienestar en un click",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "DE LA FUENTE VIGIL CESAR ENRRIQUE",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "met",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "MET",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RUIZ SANTAMARIA JUAN JAVIER",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Funcional Neuro Laboral",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "FUNCIONAL NEURO LABORAL",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "ARIAS RAFAEL FEDERICO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Hatun Malta",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "SISTEMA APP WEB DE DETECCIÓN Y CONTROL \"ZORZAL DEEP\"",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "DECATECA S.A.C.S",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Decateca",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "DECATECA",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CONTRERAS ALATA OMAR EMILIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Whats Goin On",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Whats Goin On",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "SUCNO QUIROZ AMERICO MICHAEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "umalliy.com",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Umalliy",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "MOSAIHUATE GUERRERO ELMER EDUARDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "TribuTech",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "QUIPUK",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "EMPRENDER FACTORING S.A.C.S",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "EMPRENDER FACTORING",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Emprender Créditos: Plataforma integrada, con sistema de monetización por referidos (Programa Emprender Conmigo)",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "FERNANDEZ RODRIGUEZ FERNANDO GABRIEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Awanta",
+     "estado": "Aprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Awanta",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "GUERRERO NEIRA CRISTIAN BERNARDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "ZYX JOBS",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Innovadores Latam: Tu emprendimiento al siguiente Nivel",
+     "estado": "Desaprobado",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "TREVIÑO TICLAVILCA JUAN DIEGO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "MyAdventure",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Ñawiscope: Gadget potenciado con inteligencia artificial para el diagnostico de anemia",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BERYLLIUM DEVELOPMENT COMPANY S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Smart Muni",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Smart Muni: Plataforma digital de seguridad ciudadana",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VAISMAN GONZALEZ SOLMAN",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Tok2kit",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "Tok2kit",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "QUIRITA TAIPE VICTOR ALONSO DAYGORO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Caja Azul",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "CAJA AZUL, Concursos de arquitectura que activan pequeñas intervenciones para regenerar el medioambiente",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ESCOBAR TELLEZ JOSE CARLOS",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "Podit",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "12G",
+     "titulo": "DALA",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "DEEP SKILL ACADEMY S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "DeepSkill",
+     "estado": "Aprobado*",
+     "anio": 2023
+    },
+    {
+     "gen": "13G",
+     "titulo": "Deep Skill",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MAMANI LAURA CLAUDIO RONALDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "10G",
+    "11G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "10G",
+     "titulo": "ITERA",
+     "estado": "Desaprobado",
+     "anio": 2023
+    },
+    {
+     "gen": "11G",
+     "titulo": "ITERA fabricación digital y robótica",
+     "estado": "Aprobado*",
+     "anio": 2024
+    }
+   ]
+  },
+  {
+   "solicitante": "GOMEZ REQUENA JIMY GABRIEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "BRINA, emprendimiento en cosmética de origen vegetal",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "RELIABLE EXPORT S.A.C",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CHAVARRY ALVARADO VALERIA GLORIA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Alerta Directa: Sistema de Alarmas Inteligente para incendio",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Alerta Directa: Sistema de Alarmas Inteligente",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PORTOCARRERO BANDA ABDEL ALEJANDRO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Eco Peru",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "ECO-PERU",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "AMERI FIERRO ARACELLY MASSIEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "SPIR-UP",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "SPIR-UP",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CANALES VILCA NATALY BELGICA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Riesgo Cero: Capacitación Inmersiva en Trabajos Alto Riesgo",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Riesgo Cero",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "YALLE RAFAEL OSVEN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "APPCOLIBRI (aplicación de cola libre)",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Appcolibri: Sistema digital de turnos sin colas.",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CHIPANA VILCA GUSTAVO ADOLFO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Gauss 4.0 , Aprender es Divertido",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Gauss 4.0",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CHUNGA SAAVEDRA ARTURO RAYMUNDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Pixel Home",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Pixel Home",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SANCHEZ ELIZALDE WILDER ALFREDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "MontaRent, App de Alquiler de Montacargas por Ubicación",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "VisionPallet",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "TAMARIZ MARINI JEREMY JOCINEY",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "PoultryAI",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "PoultryAI",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GUTIERREZ ORREGO GARY LUIS",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "ConstructoPlan",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "ConstructoPlan",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GUZMAN NARVAEZ CARLOS ALBERTO JUNIOR",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "IceXpress, App para la Entrega Rápida Personalizada de Hielo",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "IceXpress",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CUADROS DELGADO CHRISTIAN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "BIOBEETLES PERU \"Bioabonos y Escarabajos sostenibles\"",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "BIOBEETLES PERU: Escarabajos sostenibles",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LOPEZ YRRIBARREN ANTHONY GABRIEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Nutrigenix",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "NNUI",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MITTERHOFER GARCIA FRANZ JOSEF",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Causa",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Causa",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ORTIZ RODRIGUEZ JOSE MARIA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "MySoilPal",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "MySoilPal",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LABAN GARCIA TARSICIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "TechLease",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "TechLease",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SAAVEDRA VALDIVIA EDUARD YERMAIN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "GO",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Scalen & Partners",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VELASQUEZ MAGUIÑA FELIPE ELEODORO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "VITAS CLINIC",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "VITAS CLINIC",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "JACINTO BAZAN HAVENS PETER",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Startup PROINAN, procesos industriales ancashinos",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "PROINAN (Procesos Industriales Ancashinos)",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "WATANABE TAVERA FATIMA CAROLINA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Saneadito Legal",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Saneadito Legal",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MAGUINA MAZA HALLEY FACUNDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "TIKTUY",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "TIKTUY",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "TORRES VARGAS MIGUEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "ImaXR",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "XDC",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "QUINTANA BOBADILLA JOSE GUILLERMO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Traemelo ¨A un solo Click¨",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Traemelo ¨A un solo Click¨",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "TINEO TINEO THALIA KAREN WENDY",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Grúas Fácil, monitoreo en tiempo real y gestión de peritaje",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "OPERIX 360: Central operativa inteligente",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CRUZADO BOCANEGRA FRANCISCO DANIEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "La Pre, La forma rápida y divertida de ingresar a la U",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "TONK!",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "UNTUL PRIETO MIGUEL ANGELES",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "AutoSublima",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "AutoSublima",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ALONZO RUEDA ELEO ZAC",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Pet Love",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "PetLove",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LUIS CASTILLO DILAN ALEXANDER",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "FisioFullness",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Fullness",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RODRIGUEZ DIAZ JOSE IGNACIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "TAMAKER: Doctor Salud Online",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Medikusia, Plataforma de Salud Digital con IA",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BARRIOS GARCIA RICHARD JOHNNY",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "CicloMat",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "CicloMat",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ARIAS CALLE NAISSER",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Festéjalo",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "ASCIENDE",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GUTIERREZ MAMANI EDIT LAURA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "FerroCiclo",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "FerroCiclo",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CERVANTES ESPONDA JULIO CESAR",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "KUZI",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "KUZI",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MELENDEZ LICONA EVELIN MINOSCA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "FUNGI-FORTY.",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "FUNGI FORTY",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ORMEÑO SANCHEZ JULIO MANUEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "frend",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "frend",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VALDIVIEZO TUESTA RONALD",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "AMACHA LICORES ARTESANALES",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "AMACHA: LICORES ARTESANALES - LLAU DI",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SOLORZANO AGUIRRE ELEOTERIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "FX FRIEDMAN",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "LIBRERIA FX",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "FÉLIX SOLIS AZCARATE",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Tu clinika",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "TU CLINIKA",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BODHI S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "BODHI",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "BODHI",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "NAKANDAKARI YKEY ARTURO EDUARDO YSAMU",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Kaizen Construction System (KCS)",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Kaizen Construction System (KCS)",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CABANILLAS PARDO LENIN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "COPERA",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "COPERA",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VERASTEGUI PONCE ANGELO PAULO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "VIRTUS",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "VIRTUS",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ZAMALLOA CORTABRAZO FIORELLA SHIRLEY",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "GIA, IA traductora tecnológica de la lengua de señas LATAM",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "GIA Lab - Plataforma de inteligencia artificial que traduce entornos digitales a lengua de señas.",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PERUAGROSECURE S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "AgroJuntos",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Agrojuntos",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SALINAS ANGELES JOAQUIN ALEJANDRO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Huertos en Azoteas",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "MUYAK : Urban Harvest as a Service.",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LAGOS VALDEZ LEONARDO JOSE",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Deal&Pay",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Tu Compra",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "TINA SURE S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "TINA SURE",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Tina Sure Sac",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "HUACHEZ DIAZ LINDER",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "MEDEX",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "MEDEX",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RODRIGUEZ SORIA SERGIO GILBERTO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Fabchain",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "Fabchain",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RUIZ BARCELLOS JAVIER MARTIN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "12G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "GRAVIIT SPACE",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "12G",
+     "titulo": "GRAVIIT SPACE",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GONZALES OBLITAS CESAR DAYBI",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Xtarify AI",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Xtar.dev, plataforma de IA que transforma prompts en aplicaciones profesionales, sin necesidad de saber programar.",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CASAVERDE HUATUCO JORGE JOEL",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "ATINYA, el marketplace de múltiples mercados",
+     "estado": "Aprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "ATINYA SOFT - La primera plataforma SaaS de Omnicanalidad y Colaboración Cambiaria para Perú y LATAM",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ESPINOZA TAYPE GEOVANNA EVELYN",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "MyPeru",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Tika, la historia detrás de cada plato",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CASALLO TRAUCO ABNER FRANCISCO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Pudu",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "Panoptes",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SUPO QUISPE CARLOS HUMBERTO",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Buscatuespacio",
+     "estado": "Desaprobado",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "BTE",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "QUISPE CALLAÑAUPA ROXANA",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "VibrantApp, tu guia virtual de viajes",
+     "estado": "Aprobado*",
+     "anio": 2024
+    },
+    {
+     "gen": "13G",
+     "titulo": "HuacaScan, Drones, IA y Arqueologia",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GUEVARA VIGO CROWEL JAMES",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Madera plástica hacia la sostenibilidad de la industria",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "PISOPLAVS",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MARTINEZ FLORES EDWIN SERGIO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "GINGERBOT",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "GINGERBOT",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "AMACIFUEN MAUTINO JOSE DAVID",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "DELISETAS",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "DELISETAS",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "GARCIA HUALLULLO ANDERSON HARDY",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "BUMBLUX",
+     "estado": "Aprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Bumblux",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "CHAVEZ CALLUPE DORCAS ROSA",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "TIMCash,",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "7IMCash",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "DE CASANOVA PAZ LEONARDO PAUL",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Kresko",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Kresko, plataforma de finanzas personales 100% automatizada e impulsada por IA.",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RIVAS MORI GIANCARLO LUDWYNG",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "SANIWA",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "SANIWA",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ALVA AGUIRRE JONATHAN RENZO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "BioPet Care",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "FullSalud: Ecosistema Digital de Salud Integral con IA",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "DIAZ GODOS DIEGO FERNANDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Mavo Access SAC",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Mavo AI, plataforma para mejorar la administración de tu edificio.",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "AVENSUR FELIX ROSA ELI",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Rossue design",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Rossue Design: permite la transformación de mermas textiles conectando la producción industrial con la riqueza artesanal",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PLAZA VILLANUEVA ENRIQUE EDUARDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "NEOVERTEX",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "SANI-CYCLE, transformamos EPP en valor.",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "HERRERA DUEÑAS BETTY ESPERANZA",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Kuyap Mama - Mamá feliz, bebé feliz",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Kuyap Mama | Mamá Feliz, Bebé Feliz",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LLANOS MENDOZA LENIS JHONATAN",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "AquiNace",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "QIPI, Finanzas Comunitarias",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MONTOYA PAZ JUAN CARLOS",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "MontyFresh",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "MontyFresh",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "HUAYTA COLQUE ROY ALFREDO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "AgroCourier Perú",
+     "estado": "Aprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "AgroCourier Perú",
+     "estado": "Aprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "VIGILIO CABRERA RENE RONAL",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "NUTRI SHAPSHICO",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "NUTRIMAX, polvo proteínico que aporta energía y salud intestinal.",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "REYNOSO ESPINOZA NANER ZILPA",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "Zimina Kids - Gotas de chocolate , Fe y proteina",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "CHOCOLATES POR OBJETIVOS- LINEA O (con contenido de Fe y Proteína)",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SEATECH INNOVATION AND TECHNOLOGY S.A.C.",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "StartUp Hydrocean, USV para servicio batimétrico",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "StartUp Hydrocean, USV para servicio batimétrico",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RAMOS ROJAS SANTOS EDILBERTO",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "NeuroWell: Encuentra tu centro de bienestar",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "NeuroWell - Plataforma de bienestar emocional personalizado",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "BALDEON CARLOS LESLY RUTH",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "La Aromática, bebida natural gasificada y saludable",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "La Aromática, vecina natural gasoficada y saludable",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "RIVAS MORI ERICK JIMMY",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "MikunaBio, biotecnología para suelos sanos y rentables",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "MikunaBio, biotecnología para suelos sanos y rentables",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "TAFUR VARGAS LIZBETH",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "PACHA, plataforma digital de comercialización de Café",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "MIA AgroDigital",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "HURTADO MAÑACCASA YANETH",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "PLASTISUR, te motivamos a reciclar+",
+     "estado": "Desaprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Madplast, transformamos tus residuos en mobiliario urbano, durable y sostenible",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ASCENCIO CAYO WILBERT PASCAL",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "BACTA",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "BACTA",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "MAESTRI PEREZ MATIAS RUBEN",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "QueAuto",
+     "estado": "En Proceso",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "QueAuto",
+     "estado": "Desaprobado",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "LARA PAJUELO ALEJANDRO MARCO VICENTE",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "RUNI",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "RUNNI",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "ROMERO MUÑOZ LUZ MARIA",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 1,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "RoboFresh",
+     "estado": "Aprobado",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "RoboFresh",
+     "estado": "En Proceso",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "PASCO LIZARRAGA IVAN",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "travelows",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "Travelows",
+     "estado": "Aprobado*",
+     "anio": 2025
+    }
+   ]
+  },
+  {
+   "solicitante": "SUAREZ ARRATEA YOSSEC YOSEFER",
+   "postulaciones": 2,
+   "generaciones": [
+    "12G",
+    "13G"
+   ],
+   "en_varias_generaciones": true,
+   "aprobado_alguna_vez": true,
+   "veces_aprobado": 2,
+   "proyectos": [
+    {
+     "gen": "12G",
+     "titulo": "AtestacionDigital",
+     "estado": "Aprobado*",
+     "anio": 2025
+    },
+    {
+     "gen": "13G",
+     "titulo": "AtestacionDigital",
+     "estado": "Aprobado*",
      "anio": 2025
     }
    ]
@@ -297,6 +5163,30 @@
      "titulo": "MOVING LIGHTS",
      "estado": "Desaprobado",
      "anio": 2022
+    }
+   ]
+  },
+  {
+   "solicitante": "CASTILLO RONCEROS LUCIANA DENISSE",
+   "postulaciones": 2,
+   "generaciones": [
+    "11G"
+   ],
+   "en_varias_generaciones": false,
+   "aprobado_alguna_vez": false,
+   "veces_aprobado": 0,
+   "proyectos": [
+    {
+     "gen": "11G",
+     "titulo": "Peace Pulse",
+     "estado": "",
+     "anio": 2024
+    },
+    {
+     "gen": "11G",
+     "titulo": "Peace Pulse",
+     "estado": "",
+     "anio": 2024
     }
    ]
   }

@@ -121,20 +121,21 @@
 
   <section>
     <h2>3. Postulaciones reales a StartUp Perú <span class="badge ok">microdatos</span></h2>
-    <p class="lead">Parseamos las publicaciones de resultados de ProInnóvate (generaciones 9G y 13G):
-      <b>1,480 postulaciones</b>. Dos hallazgos: la enorme mayoría postula como <b>persona natural</b>,
-      no como empresa; y hay <b>solicitantes que fueron aprobados en más de una generación</b> — es
-      decir, recibieron más de un fondo del Estado.</p>
+    <p class="lead">Parseamos las publicaciones de resultados de ProInnóvate de <b>5 generaciones
+      (9G a 13G, 2022–2026)</b>: <b>2,820 postulaciones</b> y <b>1,347 ganadores posibles</b>
+      (aprobados en evaluación). Dos hallazgos fuertes: la mayoría postula como <b>persona natural</b>,
+      y <b>81 solicitantes fueron aprobados en más de una generación</b> — recibieron más de un fondo
+      del Estado; uno de ellos, <b>en 4 generaciones seguidas</b>.</p>
     <div class="grid cards">
       <div class="card"><h3>¿Quién postula? Persona vs empresa</h3>
-        <p class="src">Fuente: ProInnóvate · 9G + 13G (1,480 postulaciones)</p>
+        <p class="src">Fuente: ProInnóvate · 9G–13G (2,820 postulaciones)</p>
         <div class="chartbox"><canvas id="cTipo"></canvas></div>
-        <p class="note">79% postula como persona natural (aún sin constituir empresa).</p></div>
-      <div class="card"><h3>Aprobados en más de una generación (2 fondos)</h3>
-        <p class="src">Fuente: ProInnóvate · cruce 9G (2023) ↔ 13G (2026)</p>
+        <p class="note">83% postula como persona natural (aún sin constituir empresa).</p></div>
+      <div class="card"><h3>Aprobados en varias generaciones (más de un fondo)</h3>
+        <p class="src">Fuente: ProInnóvate · cruce 9G–13G</p>
         <table id="tRep"></table>
-        <p class="note">12 solicitantes repetidos (10 en varias generaciones); estos 4 fueron
-          <b>aprobados dos veces</b>. La lista crecerá al sumar 10G–12G.</p></div>
+        <p class="note">81 solicitantes fueron aprobados 2+ veces (201 postularon en varias
+          generaciones). Datos de "aprobado en evaluación", no siempre = desembolso final.</p></div>
     </div>
   </section>
 
@@ -198,19 +199,23 @@ const DATA = {
     {n:"97%", l:"Del capital invertido es extranjero (2024)"},
     {n:"85%", l:"Del capital se fue a fintech (2024)"},
     {n:"S/ 268M", l:"ProInnóvate en 1,400 emprendimientos"},
-    {n:"79%", l:"Postula al Estado como persona natural, no empresa"},
+    {n:"83%", l:"Postula al Estado como persona natural, no empresa"},
+    {n:"81", l:"Solicitantes aprobados 2+ veces (más de un fondo)"},
+    {n:"4×", l:"Una persona fue aprobada en 4 generaciones seguidas"},
     {n:"83%", l:"Del VC 2021 se fue a solo 3 startups"}
   ],
   vc: {labels:["2018","2019","2020","2021","2022","2023","2024"], v:[9.1,21,46,124.3,87,76.5,47]},
   origen: {labels:["Extranjero","Nacional"], v:[97,3]},
   sector: {labels:["Fintech","Otros sectores"], v:[85.1,14.9]},
   gen: {labels:["2013","2014","2015","2016","2017","8G","9G"], v:[14,39,36,66,85,105,80]},
-  tipo: {labels:["Persona natural","Empresa"], v:[79,21]},
+  tipo: {labels:["Persona natural","Empresa"], v:[83,17]},
   repetidos: [
-    ["Kawat S.A.C.","empresa","9G + 13G"],
-    ["2JS Operaciones S.A.C.","empresa","9G + 13G"],
-    ["Siccha Tarrillo Paúl Martín","persona","9G + 13G"],
-    ["Añazgo Barrantes Francisco J.","persona","9G + 13G"]
+    ["Andía Silvera Joel Jesús","4 veces","10G, 11G, 12G, 13G"],
+    ["Sáenz Acosta César Sandro","3 veces","9G, 10G, 11G, 12G"],
+    ["Ccopa Chumbes Wilson","3 veces","9G, 10G, 12G"],
+    ["Portocarrero Merino Kevin E.","3 veces","10G, 11G, 12G"],
+    ["Fernández García Miura Massiel","3 veces","11G, 12G, 13G"],
+    ["Ulloa Carbajal Lam Mao","3 veces","11G, 12G, 13G"]
   ],
   rondas: [
     ["Crehana","Serie B","US$ 70M","Edtech","2021"],
@@ -239,7 +244,7 @@ document.getElementById('tiles').innerHTML = DATA.tiles.map(t=>
 document.getElementById('tSP').innerHTML = "<tbody>"+DATA.sp.map(r=>
   `<tr><td>${r[0]}</td><td class="r"><b>${r[1]}</b></td></tr>`).join('')+"</tbody>";
 document.getElementById('tRep').innerHTML =
-  "<thead><tr><th>Solicitante</th><th>Tipo</th><th>Aprobado en</th></tr></thead><tbody>"+
+  "<thead><tr><th>Solicitante</th><th>Aprobado</th><th>Generaciones</th></tr></thead><tbody>"+
   DATA.repetidos.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')+"</tbody>";
 document.getElementById('tRondas').innerHTML =
   "<thead><tr><th>Startup</th><th>Ronda</th><th class='r'>Monto</th><th>Sector</th><th>Año</th></tr></thead><tbody>"+
