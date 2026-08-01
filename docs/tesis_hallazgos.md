@@ -51,3 +51,12 @@ contactos**.
 ### Montos oficiales (coinciden entre tesis)
 Emprendimiento Innovador **S/50k**; Dinámico **S/140k–150k**; Alto Impacto **S/500k**; máximo 12 meses.
 Innóvate Perú cofinanció **+3,400 proyectos al 2019**.
+
+## Tesis adicionales (agosto 2026) — mayormente cualitativas, baja/media relevancia
+- **Pérez Guzmán & Huerta Arellanos (2023, PUCP)** — sobrevivencia de startups Edtech (n=6). Capital organizacional = factor más determinante; formación académica, edad, género y etnia NO serían determinantes. Financiamiento inicial: fondos propios/familiares.
+- **Romero Sipán & Navarro (2024, PUCP)** — marca empleadora (caso Tu Cambista). Cifras citables: inversión US$9M (2018) → US$87M (2022); **80% de startups locales sobreviven solo 2 años** (Gestión 2023).
+- **Marin Pacchioni et al. (2019, PUCP)** — Value Proposition (caso Manki). ~200,000 startups/año en Perú; **solo 10% sobrevive >12 meses** (Gestión 2017).
+- **Mitta Flores (2016, PUCP)** — Lean Startup (n=6). 4 de 6 nacieron como tesis académicas; ecosistema calificado 2.7/5.
+- **Alarcón Rojas (2017, PUCP)** — adopción de TIC en startups (n=8). Contexto histórico; sin datos de supervivencia/financiamiento.
+
+Ninguna aporta datos primarios de estrato/respaldo familiar/precariedad. Confirman: ecosistema cualitativamente estudiado, sin la "capa social" cuantificada.
