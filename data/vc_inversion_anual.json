@@ -1,15 +1,55 @@
 {
   "titulo": "Inversión de venture capital en startups peruanas (US$ millones)",
-  "fuente": "PECAP (vía Gestión, Bloomberg Línea, Forbes, El Referente)",
+  "fuente": "PECAP (vía Gestión, Bloomberg Línea, Forbes, El Comercio, Revista Economía)",
   "nota": "2021 fue el récord: incluye la ronda de Crehana (~US$70M, >50% del total). Las cifras varían según la fuente y metodología.",
   "serie": [
-    {"anio": 2018, "usd_m": 9.1, "operaciones": null},
-    {"anio": 2019, "usd_m": 21.0, "operaciones": 63},
-    {"anio": 2020, "usd_m": 46.0, "operaciones": null},
-    {"anio": 2021, "usd_m": 124.3, "operaciones": null},
-    {"anio": 2022, "usd_m": 87.0, "operaciones": 41},
-    {"anio": 2023, "usd_m": 76.5, "operaciones": 23},
-    {"anio": 2024, "usd_m": 47.0, "operaciones": 33}
+    {
+      "anio": 2018,
+      "usd_m": 9.1,
+      "operaciones": null
+    },
+    {
+      "anio": 2019,
+      "usd_m": 21.0,
+      "operaciones": 63
+    },
+    {
+      "anio": 2020,
+      "usd_m": 46.0,
+      "operaciones": null
+    },
+    {
+      "anio": 2021,
+      "usd_m": 124.3,
+      "operaciones": null
+    },
+    {
+      "anio": 2022,
+      "usd_m": 87.0,
+      "operaciones": 41
+    },
+    {
+      "anio": 2023,
+      "usd_m": 50.0,
+      "operaciones": null,
+      "nota": "Corregido 16-nov-2026: antes figuraba 76.5/23, que es la cifra de 2025. Cierre 2023 ~US$50M (PECAP vía El Comercio)."
+    },
+    {
+      "anio": 2024,
+      "usd_m": 47.0,
+      "operaciones": 33
+    },
+    {
+      "anio": 2025,
+      "usd_m": 76.5,
+      "operaciones": 23,
+      "nota": "PECAP 2025: +63% monto, -30% operaciones; fintech 76.9%, proptech 19.9%; >65% de operaciones con capital extranjero; buena parte es deuda."
+    }
   ],
-  "acumulado_2018_2024_usd_m": 410.9
+  "primer_semestre_2026": {
+    "operaciones_capital": 3,
+    "usd_m": 17,
+    "fuente": "Gestión (2026)"
+  },
+  "acumulado_2018_2025_usd_m": 460.9
 }

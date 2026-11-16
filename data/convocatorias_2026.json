@@ -1,0 +1,24 @@
+{
+  "titulo": "Estado de las convocatorias de StartUp Perú y apoyo externo a startups en 2026",
+  "corte": "2026-11-16",
+  "startup_peru": {
+    "ultima_generacion": "13G",
+    "bases_publicadas": "2025-12-29",
+    "cierre_postulacion": "2026-01-16",
+    "resultados_finales": "2026-02-19",
+    "generacion_14G": "sin bases publicadas al corte",
+    "calendario_oficial_2026": "StartUp Perú EIN, EDI y PLUG 2G figuran en 'convocatorias cerradas'",
+    "fuentes": [
+      "https://startup.proinnovate.gob.pe/wp-json/wp/v2/media (últimos documentos: resultados 13G, feb-2026)",
+      "https://www.gob.pe/54489-revisa-la-programacion-de-financiamientos-de-proinnovate",
+      "https://cdn.www.gob.pe/uploads/document/file/10437141/8467587-calendario-de-concursos-2026.pdf"
+    ]
+  },
+  "otros_proinnovate_2026": [
+    {"concurso": "Concursos Regionales 2026", "periodo": "abr-may 2026", "resultado": "28 ganadores, S/1.8M", "fuente": "https://www.gob.pe/institucion/proinnovate/noticias/1426299-proinnovate-financiara-proyectos-innovadores-por-un-monto-de-s-1-8-millones"}
+  ],
+  "apoyo_eeuu_2026": [
+    {"programa": "Venture Ready: Peru to U.S.", "financia": "Departamento de Estado (AEIF) / Embajada de EE.UU. en Lima; ejecuta Golden Circle", "tipo": "mentoría y preparación para inversión; sin capital", "postulacion": "2026-07-14 a 2026-08-14", "postulaciones": 742, "seleccionadas": "29 (Forbes); convocatoria decía 25", "foro": "2026-10-14 Lima", "fuentes": ["https://peru-to-us.com/", "https://www.infobae.com/peru/2026/07/22/embajada-de-eeuu-lanza-convocatoria-para-seleccionar-a-25-startups-peruanas-y-prepararlas-para-captar-inversion/", "https://forbes.pe/negocios/2026-10-15/16-startups-peruanas-buscan-us231-millones-que-necesitan-para-atraer-inversion-internacional"]},
+    {"programa": "YLAI", "tipo": "viaje/capacitación en EE.UU.", "cierre": "2026-11-08", "fuente": "https://www.infobae.com/peru/2026/10/28/eeuu-ofrece-becas-con-todos-los-gastos-pagados-a-emprendedores-peruanos-postula-hasta-el-8-de-noviembre/"}
+  ]
+}

@@ -61,3 +61,10 @@ bloquean datacenters o cambian de ruta (revisar manualmente). Sin URL = por conf
 - Felices & Muñoz (2020, PUCP) — crecimiento agrobiotech (StartUp Perú/Reto Bio).
 - Martinez & Urcia (2023, PUCP) — marca empleadora en startups.
 - PENDIENTE: Álvarez, J. (2021) tesis doctoral PUCP "Determinantes de la supervivencia de startups peruanas" (la única con datos cuantitativos de supervivencia).
+
+## Actualización 16-nov-2026
+- **VC 2025**: US$76.5M, 23 operaciones (+63% monto, −30% operaciones), fintech 76.9%, proptech 19.9% — PECAP vía [Revista Economía](https://www.revistaeconomia.com/el-venture-capital-en-peru-crecio-63-el-pvcc26-busca-convertir-ese-dinamismo-en-nuevas-conexiones-de-capital/) e [Infobae](https://www.infobae.com/peru/2026/11/05/financiamiento-de-startups-en-peru-por-que-faltan-usd-516-millones-para-cubrir-las-necesidades-del-sector/).
+- **Corrección 2023**: figuraba 76.5/23 (era la cifra de 2025). Cierre 2023 ≈ US$50M según PECAP vía [El Comercio](https://elcomercio.pe/economia/dia-1/inversion-en-startups-como-le-fue-a-latinoamerica-y-peru-en-el-ultimo-ano-empresas-estrategia-negocios-venture-capital-noticia/).
+- **1S-2026**: 3 operaciones de capital por ~US$17M — [Gestión](https://gestion.pe/economia/empresas/startups-en-peru-inversion-ia-y-tendencias-hacia-2027-noticia/).
+- **Brecha 2026–2030 US$516M** (PECAP–COFIDE).
+- **Convocatorias 2026** y **Venture Ready: Peru to U.S.**: ver `data/convocatorias_2026.json`.
